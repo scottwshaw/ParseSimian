@@ -43,3 +43,7 @@
   (fact (extract-map-of-total-duplicated-lines ...input-xml...) => (contains {:a 1, :b 2, :c 4, :d 6})
 	(provided (extract-seq-of-block-linecounts ...input-xml...) =>
 		  [:a 1 :b 1 :b 1 :c 2 :c 2 :d 2 :d 2 :d 2])))
+
+(deftest should-extract-map-from-empty-seq
+  (fact (extract-map-of-total-duplicated-lines ...input-xml...) => (contains {})
+	(provided (extract-seq-of-block-linecounts ...input-xml...) => [])))

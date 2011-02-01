@@ -1,0 +1,1822 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="simian.xsl" type="text/xsl"?>
+<!--
+Similarity Analyser 2.2.24 - http://www.redhillconsulting.com.au/products/simian/index.html
+Copyright (c) 2003-08 RedHill Consulting Pty. Ltd.  All rights reserved.
+Simian is not free unless used solely for non-commercial or evaluation purposes.
+-->
+<simian version="2.2.24">
+    <check ignoreCharacterCase="true" ignoreCurlyBraces="true" ignoreIdentifierCase="true" ignoreModifiers="true" ignoreStringCase="true" threshold="6">
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/transformation/dao/model/IMSSG30510Root.java" startLineNumber="233" endLineNumber="239"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/transformation/dao/model/IMSSG30510Root.java" startLineNumber="159" endLineNumber="165"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/archive/ArchiveMDBImpl.java" startLineNumber="216" endLineNumber="222"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/archive/ArchiveMDBImpl.java" startLineNumber="188" endLineNumber="194"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/archive/ArchiveMDBImpl.java" startLineNumber="145" endLineNumber="151"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/transformation/dao/model/IMSSG30513Root.java" startLineNumber="539" endLineNumber="545"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/transformation/dao/model/IMSSG30513Root.java" startLineNumber="473" endLineNumber="479"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/transformation/dao/model/IMSSG30513Root.java" startLineNumber="388" endLineNumber="394"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/transformation/dao/model/IMSSG30513Root.java" startLineNumber="314" endLineNumber="320"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/access/AccessModeManagerImpl.java" startLineNumber="191" endLineNumber="196"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/access/AccessModeManagerImpl.java" startLineNumber="162" endLineNumber="167"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/util/mdb/JdbcUtil.java" startLineNumber="120" endLineNumber="125"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/util/mdb/JdbcUtil.java" startLineNumber="99" endLineNumber="104"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/report/ReportTasksBean.java" startLineNumber="417" endLineNumber="424"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/report/ReportTasksBean.java" startLineNumber="333" endLineNumber="340"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/cct/CCTTasksBean.java" startLineNumber="187" endLineNumber="194"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/cct/ec/NegotiabilityViolation.java" startLineNumber="221" endLineNumber="226"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/cct/ec/NegotiabilityViolation.java" startLineNumber="166" endLineNumber="172"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/lodgment/LodgmentBean.java" startLineNumber="423" endLineNumber="428"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/lodgment/LodgmentBean.java" startLineNumber="391" endLineNumber="396"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/product/TimesliceDaoImpl.java" startLineNumber="133" endLineNumber="138"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/product/TimesliceDaoImpl.java" startLineNumber="108" endLineNumber="113"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/model/Maintenance/bom/DomainChange.java" startLineNumber="256" endLineNumber="265"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/model/Maintenance/bom/DomainChange.java" startLineNumber="204" endLineNumber="213"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/scr/RulesetInheritance.java" startLineNumber="283" endLineNumber="295"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/scr/RulesetChange.java" startLineNumber="418" endLineNumber="434"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/query/QueryRulesetBean.java" startLineNumber="200" endLineNumber="205"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/query/QueryProfileBean.java" startLineNumber="164" endLineNumber="169"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/query/QueryFeatureBean.java" startLineNumber="195" endLineNumber="200"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/query/QueryConditionBean.java" startLineNumber="187" endLineNumber="192"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/scr/ChangeRequestDaoImpl.java" startLineNumber="782" endLineNumber="787"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/scr/ChangeRequestDaoImpl.java" startLineNumber="732" endLineNumber="737"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/scr/ChangeRequestDaoImpl.java" startLineNumber="667" endLineNumber="672"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/scr/ChangeRequestBean.java" startLineNumber="391" endLineNumber="397"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/cct/CCTListBean.java" startLineNumber="232" endLineNumber="238"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/bom/DomainDaoImpl.java" startLineNumber="598" endLineNumber="604"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/bom/DomainDaoImpl.java" startLineNumber="502" endLineNumber="508"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/scr/RulesetInheritance.java" startLineNumber="39" endLineNumber="52"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/scr/RulesetChange.java" startLineNumber="75" endLineNumber="87"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/scr/ChangeRequestBean.java" startLineNumber="649" endLineNumber="655"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/scr/ChangeRequestBean.java" startLineNumber="502" endLineNumber="508"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/tools/compare/IMSPolicy.java" startLineNumber="121" endLineNumber="127"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/tools/compare/IMSPolicy.java" startLineNumber="93" endLineNumber="99"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/condition/NewRuleSetBean.java" startLineNumber="598" endLineNumber="607"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/condition/InheritRuleSetBean.java" startLineNumber="196" endLineNumber="205"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/archive/ArchiveUtil.java" startLineNumber="122" endLineNumber="127"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/archive/ArchiveUtil.java" startLineNumber="105" endLineNumber="110"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/scr/ChangeRequestBean.java" startLineNumber="441" endLineNumber="450"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/maintenance/MaintenanceListBean.java" startLineNumber="770" endLineNumber="779"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/scr/RulesetInheritance.java" startLineNumber="242" endLineNumber="254"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/scr/RulesetChange.java" startLineNumber="373" endLineNumber="389"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/timesliceview/model/ProductDeletion.java" startLineNumber="26" endLineNumber="42"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/timesliceview/model/ProductClone.java" startLineNumber="32" endLineNumber="48"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/timesliceview/model/ConditionView.java" startLineNumber="43" endLineNumber="59"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/dao/RulesetDao.java" startLineNumber="435" endLineNumber="440"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/ProductFeature.java" startLineNumber="252" endLineNumber="257"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/DataIntegrationServiceImpl.java" startLineNumber="271" endLineNumber="279"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/DataIntegrationServiceImpl.java" startLineNumber="246" endLineNumber="254"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/cct/CCTDaoImpl.java" startLineNumber="293" endLineNumber="299"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/cct/CCTDaoImpl.java" startLineNumber="272" endLineNumber="278"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/cct/CCTDaoImpl.java" startLineNumber="231" endLineNumber="237"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/helper/RTSHelper.java" startLineNumber="748" endLineNumber="753"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/archive/helper/RTSHelper.java" startLineNumber="71" endLineNumber="76"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/trigger/TriggerDaoImpl.java" startLineNumber="334" endLineNumber="339"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/bom/DomainDaoImpl.java" startLineNumber="761" endLineNumber="766"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/dao/trigger/TriggerDaoImpl.java" startLineNumber="338" endLineNumber="343"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/dtdiff/ProductRuleDiffDaoImpl.java" startLineNumber="149" endLineNumber="154"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/dtdiff/ProductRuleDiffDaoImpl.java" startLineNumber="136" endLineNumber="141"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/prodeletion/ProductDeletionHelperImpl.java" startLineNumber="616" endLineNumber="623"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/prodeletion/ProductDeletionHelperImpl.java" startLineNumber="556" endLineNumber="566"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/prodeletion/ProductDeletionHelperImpl.java" startLineNumber="500" endLineNumber="509"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/LodgementControllerImpl.java" startLineNumber="189" endLineNumber="194"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/LodgementControllerImpl.java" startLineNumber="143" endLineNumber="148"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/lodgment/LodgmentDaoImpl.java" startLineNumber="323" endLineNumber="338"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/cct/CCTDaoImpl.java" startLineNumber="639" endLineNumber="654"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/util/DTDataAdapter.java" startLineNumber="84" endLineNumber="89"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/util/DTDataAdapter.java" startLineNumber="64" endLineNumber="69"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/product/ProductFormDataDao.java" startLineNumber="397" endLineNumber="406"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/product/ProductFormDataDao.java" startLineNumber="354" endLineNumber="363"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/product/ProductVisibilityDaoImpl.java" startLineNumber="477" endLineNumber="482"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/product/ProductVisibilityDaoImpl.java" startLineNumber="404" endLineNumber="409"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/condition/ChangeRuleSetBean.java" startLineNumber="290" endLineNumber="296"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/ManagerBean.java" startLineNumber="522" endLineNumber="528"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/cct/model/NUMCValue.java" startLineNumber="338" endLineNumber="347"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/cct/model/NUMCValue.java" startLineNumber="252" endLineNumber="260"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/transformation/IMSProduct.java" startLineNumber="170" endLineNumber="176"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/transformation/IMSProduct.java" startLineNumber="161" endLineNumber="167"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/report/ReportTasksBean.java" startLineNumber="429" endLineNumber="439"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/report/ReportTasksBean.java" startLineNumber="343" endLineNumber="353"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/cct/CCTTasksBean.java" startLineNumber="197" endLineNumber="207"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/model/lodgment/LodgmentTask.java" startLineNumber="43" endLineNumber="58"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/model/cct/CCTTask.java" startLineNumber="101" endLineNumber="116"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/lodgment/LodgmentDaoImpl.java" startLineNumber="239" endLineNumber="244"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/lodgment/LodgmentDaoImpl.java" startLineNumber="213" endLineNumber="218"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/AbstractDao.java" startLineNumber="90" endLineNumber="95"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/dao/DaoBase.java" startLineNumber="84" endLineNumber="90"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/dao/DaoBase.java" startLineNumber="55" endLineNumber="61"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/query/QueryBase.java" startLineNumber="285" endLineNumber="290"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/query/QueryBase.java" startLineNumber="263" endLineNumber="268"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/cct/util/ReportUtil.java" startLineNumber="734" endLineNumber="740"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/cct/util/ReportUtil.java" startLineNumber="620" endLineNumber="626"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/query/QueryBase.java" startLineNumber="280" endLineNumber="286"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/transformation/dao/LodgementDao.java" startLineNumber="41" endLineNumber="47"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/bom/DomainDaoImpl.java" startLineNumber="673" endLineNumber="678"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/bom/DomainDaoImpl.java" startLineNumber="314" endLineNumber="319"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/bom/DomainDaoImpl.java" startLineNumber="257" endLineNumber="262"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/bom/DomainDaoImpl.java" startLineNumber="219" endLineNumber="224"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/mdb/FinconMDBDaoImpl.java" startLineNumber="83" endLineNumber="88"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/mdb/CCTMDBDaoImpl.java" startLineNumber="109" endLineNumber="114"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/scr/RulesetInheritance.java" startLineNumber="235" endLineNumber="240"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/scr/RulesetChange.java" startLineNumber="366" endLineNumber="371"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/transformation/Convert2IMSModel.java" startLineNumber="122" endLineNumber="128"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/transformation/Convert2IMSModel.java" startLineNumber="70" endLineNumber="76"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/tools/compare/RTSRuleset.java" startLineNumber="69" endLineNumber="74"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/tools/compare/IMSPolicy.java" startLineNumber="38" endLineNumber="43"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/helper/diff/ConditionNegotiabilityTimeslice.java" startLineNumber="49" endLineNumber="65"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/product/ConditionNegotiability.java" startLineNumber="34" endLineNumber="50"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/query/QueryRulesetBean.java" startLineNumber="189" endLineNumber="194"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/query/QueryProfileBean.java" startLineNumber="241" endLineNumber="246"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/query/QueryProductBean.java" startLineNumber="194" endLineNumber="199"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/query/QueryFeatureBean.java" startLineNumber="218" endLineNumber="223"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/query/QueryConditionBean.java" startLineNumber="209" endLineNumber="214"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/query/QueryProfileBean.java" startLineNumber="49" endLineNumber="64"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/query/QueryFeatureBean.java" startLineNumber="53" endLineNumber="68"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/cct/util/RSReportBean.java" startLineNumber="75" endLineNumber="95"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/cct/util/EVReportBean.java" startLineNumber="35" endLineNumber="110"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/query/QueryProfile.java" startLineNumber="86" endLineNumber="99"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/query/QueryProduct.java" startLineNumber="68" endLineNumber="81"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/product/ProductCloneHelperImpl.java" startLineNumber="233" endLineNumber="238"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/product/ProductCloneHelperImpl.java" startLineNumber="207" endLineNumber="212"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/ProductFeature.java" startLineNumber="426" endLineNumber="434"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/ProductFeature.java" startLineNumber="414" endLineNumber="422"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/ProductFeature.java" startLineNumber="402" endLineNumber="410"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/ProductFeature.java" startLineNumber="390" endLineNumber="398"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/fincon/report/ReportDataFormatterImpl.java" startLineNumber="34" endLineNumber="42"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/fincon/report/BratRuleReportDataFormatter.java" startLineNumber="45" endLineNumber="52"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/rts/cmd/InsertTimesliceCommand.java" startLineNumber="39" endLineNumber="56"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/rts/cmd/DeleteTimesliceCommand.java" startLineNumber="16" endLineNumber="33"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/query/QueryBase.java" startLineNumber="414" endLineNumber="422"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/query/ProductData.java" startLineNumber="296" endLineNumber="304"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/cct/dao/CCTReportDao.java" startLineNumber="163" endLineNumber="168"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/cct/dao/CCTReportDao.java" startLineNumber="152" endLineNumber="157"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/maintenance/MaintenanceListBean.java" startLineNumber="765" endLineNumber="770"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/maintenance/MaintenanceListBean.java" startLineNumber="754" endLineNumber="759"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/cct/dao/CCTReportDao.java" startLineNumber="192" endLineNumber="197"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/cct/dao/CCTReportDao.java" startLineNumber="182" endLineNumber="187"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/LodgementControllerImpl.java" startLineNumber="657" endLineNumber="674"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/cctctrl/CctControllerImpl.java" startLineNumber="284" endLineNumber="299"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/cct/CCTDaoImpl.java" startLineNumber="290" endLineNumber="296"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/cct/CCTDaoImpl.java" startLineNumber="228" endLineNumber="234"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/cct/CCTDaoImpl.java" startLineNumber="186" endLineNumber="192"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/scr/ChangeRequestManagerImpl.java" startLineNumber="448" endLineNumber="453"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/rebuid/SystemRebuilderImpl.java" startLineNumber="163" endLineNumber="168"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/scr/RulesetInheritance.java" startLineNumber="258" endLineNumber="263"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/scr/RulesetChange.java" startLineNumber="393" endLineNumber="398"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/util/mdb/JdbcUtil.java" startLineNumber="77" endLineNumber="83"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/util/mdb/JdbcUtil.java" startLineNumber="53" endLineNumber="58"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/cct/ec/CCTSG30510.java" startLineNumber="293" endLineNumber="299"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/cct/ec/CCTSG30510.java" startLineNumber="272" endLineNumber="278"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/product/ProductVisibilityDaoImpl.java" startLineNumber="536" endLineNumber="542"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/product/ProductVisibilityDaoImpl.java" startLineNumber="267" endLineNumber="273"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/helper/LogHelper.java" startLineNumber="320" endLineNumber="325"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/helper/LogHelper.java" startLineNumber="245" endLineNumber="250"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/scr/RulesetInheritance.java" startLineNumber="497" endLineNumber="511"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/scr/RulesetChange.java" startLineNumber="660" endLineNumber="674"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/cct/CCTRunner.java" startLineNumber="591" endLineNumber="597"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/cct/CCTRunner.java" startLineNumber="555" endLineNumber="561"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/product/ProductFormDataDao.java" startLineNumber="408" endLineNumber="413"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/product/ProductFormDataDao.java" startLineNumber="365" endLineNumber="370"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/helper/DecisionTableHelperBase.java" startLineNumber="251" endLineNumber="258"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/helper/DecisionTableHelperBase.java" startLineNumber="57" endLineNumber="64"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/bom/DomainBean.java" startLineNumber="721" endLineNumber="726"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/bom/DomainBean.java" startLineNumber="686" endLineNumber="691"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/dao/RulesetDao.java" startLineNumber="516" endLineNumber="522"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/dao/RulesetDao.java" startLineNumber="468" endLineNumber="475"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/transformation/dao/model/IMSSG30515.java" startLineNumber="131" endLineNumber="146"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/transformation/dao/model/IMSSG30512.java" startLineNumber="176" endLineNumber="191"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/transformation/dao/model/IMSSG30509.java" startLineNumber="246" endLineNumber="261"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/cct/util/ReportUtil.java" startLineNumber="749" endLineNumber="757"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/cct/util/ReportUtil.java" startLineNumber="499" endLineNumber="507"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/ProductFeature.java" startLineNumber="150" endLineNumber="155"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/ProductFeature.java" startLineNumber="127" endLineNumber="132"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/helper/BomHelper.java" startLineNumber="81" endLineNumber="86"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/helper/BomHelper.java" startLineNumber="62" endLineNumber="67"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/bom/DomainDaoImpl.java" startLineNumber="882" endLineNumber="888"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/dao/PDAConfigDAO.java" startLineNumber="101" endLineNumber="108"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/model/Maintenance/bom/DomainChange.java" startLineNumber="281" endLineNumber="290"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/model/Maintenance/bom/DomainChange.java" startLineNumber="229" endLineNumber="238"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/tools/compare/IMSPolicy.java" startLineNumber="693" endLineNumber="699"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/tools/compare/IMSPolicy.java" startLineNumber="294" endLineNumber="300"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/dao/trigger/TriggerDaoImpl.java" startLineNumber="36" endLineNumber="41"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/dao/ScrDao.java" startLineNumber="162" endLineNumber="167"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/helper/LogHelper.java" startLineNumber="329" endLineNumber="334"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/helper/LogHelper.java" startLineNumber="254" endLineNumber="259"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/helper/LogHelper.java" startLineNumber="181" endLineNumber="186"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/helper/LogHelper.java" startLineNumber="108" endLineNumber="113"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/product/ProductTreeBeanBase.java" startLineNumber="464" endLineNumber="469"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/dt/DecisionTableBean.java" startLineNumber="669" endLineNumber="674"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/condition/ConditionManagerBean.java" startLineNumber="338" endLineNumber="343"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/log/LogDaoImplBase.java" startLineNumber="413" endLineNumber="419"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/log/LogDaoImplBase.java" startLineNumber="388" endLineNumber="394"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/login/ConnectionBean.java" startLineNumber="170" endLineNumber="176"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/login/ConnectionBean.java" startLineNumber="147" endLineNumber="153"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/ReportingDaoGetterImpl.java" startLineNumber="145" endLineNumber="150"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/ReportingDaoGetterImpl.java" startLineNumber="122" endLineNumber="127"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/ReportingDaoGetterImpl.java" startLineNumber="99" endLineNumber="104"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/ReportingDaoGetterImpl.java" startLineNumber="77" endLineNumber="82"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/ReportingDaoGetterImpl.java" startLineNumber="55" endLineNumber="60"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/ReportingDaoGetterImpl.java" startLineNumber="33" endLineNumber="38"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/report/TaskCreateBean.java" startLineNumber="340" endLineNumber="345"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/report/ReportTasksBean.java" startLineNumber="257" endLineNumber="262"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/cct/CCTTasksBean.java" startLineNumber="125" endLineNumber="130"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/login/ConnectionBean.java" startLineNumber="163" endLineNumber="168"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/login/ConnectionBean.java" startLineNumber="140" endLineNumber="145"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/transformation/dao/model/IMSSG30513Root.java" startLineNumber="455" endLineNumber="460"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/transformation/dao/model/IMSSG30513Root.java" startLineNumber="431" endLineNumber="436"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/services/bom/BomUpdaterImpl.java" startLineNumber="152" endLineNumber="157"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/services/bom/BomUpdaterImpl.java" startLineNumber="122" endLineNumber="127"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/services/bom/BomUpdaterImpl.java" startLineNumber="90" endLineNumber="95"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/scr/RulesetInheritance.java" startLineNumber="624" endLineNumber="641"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/scr/ProductChange.java" startLineNumber="215" endLineNumber="232"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/scr/ConditionChange.java" startLineNumber="143" endLineNumber="160"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/bom/DomainDaoImplBase.java" startLineNumber="265" endLineNumber="271"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/bom/DomainDaoImpl.java" startLineNumber="463" endLineNumber="469"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/bom/DomainDaoImpl.java" startLineNumber="392" endLineNumber="398"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/bom/DomainDaoImpl.java" startLineNumber="357" endLineNumber="363"/>
+        </set>
+        <set lineCount="6">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/cct/util/EVReportBean.java" startLineNumber="109" endLineNumber="127"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/cct/util/CVReportBean.java" startLineNumber="39" endLineNumber="57"/>
+        </set>
+        <set lineCount="7">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/bom/DomainDaoImpl.java" startLineNumber="218" endLineNumber="224"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/bom/DomainDaoImpl.java" startLineNumber="256" endLineNumber="262"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/bom/DomainDaoImpl.java" startLineNumber="313" endLineNumber="319"/>
+        </set>
+        <set lineCount="7">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/dao/trigger/RuleSetBase.java" startLineNumber="144" endLineNumber="150"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/trigger/rule/RuleSetBase.java" startLineNumber="140" endLineNumber="146"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/ProductFeature.java" startLineNumber="226" endLineNumber="232"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/dao/ProductNegtDao.java" startLineNumber="163" endLineNumber="169"/>
+        </set>
+        <set lineCount="7">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/model/history/ProductLog.java" startLineNumber="99" endLineNumber="117"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/model/history/ConditionRuleLog.java" startLineNumber="405" endLineNumber="423"/>
+        </set>
+        <set lineCount="7">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/query/QueryRuleset.java" startLineNumber="53" endLineNumber="62"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/query/QueryRuleset.java" startLineNumber="72" endLineNumber="81"/>
+        </set>
+        <set lineCount="7">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/cct/report/model/ccv/CCVRowBean.java" startLineNumber="16" endLineNumber="28"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/cct/report/model/ecv/ECVRowBean.java" startLineNumber="15" endLineNumber="27"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/archive/report/PolicyRowBean.java" startLineNumber="14" endLineNumber="26"/>
+        </set>
+        <set lineCount="7">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/condition/ConditionManagerBean.java" startLineNumber="338" endLineNumber="345"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/dt/DecisionTableBean.java" startLineNumber="669" endLineNumber="676"/>
+        </set>
+        <set lineCount="7">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/maintenance/MaintenanceListBean.java" startLineNumber="206" endLineNumber="212"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/maintenance/MaintenanceListBean.java" startLineNumber="349" endLineNumber="355"/>
+        </set>
+        <set lineCount="7">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/scr/ChangeRequestBean.java" startLineNumber="362" endLineNumber="369"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/auth/AuthBean.java" startLineNumber="135" endLineNumber="142"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/lodgment/LodgmentBean.java" startLineNumber="237" endLineNumber="244"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/cct/CCTListBean.java" startLineNumber="198" endLineNumber="205"/>
+        </set>
+        <set lineCount="7">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/LodgementUtilities.java" startLineNumber="175" endLineNumber="182"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/rebuid/SystemRebuilderImpl.java" startLineNumber="199" endLineNumber="206"/>
+        </set>
+        <set lineCount="7">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/timesliceview/ProductChangeHandler.java" startLineNumber="77" endLineNumber="84"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/timesliceview/ProductChangeHandler.java" startLineNumber="182" endLineNumber="189"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/timesliceview/ProductChangeHandler.java" startLineNumber="255" endLineNumber="262"/>
+        </set>
+        <set lineCount="7">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/archive/helper/RTSHelper.java" startLineNumber="193" endLineNumber="200"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/helper/RTSHelper.java" startLineNumber="614" endLineNumber="621"/>
+        </set>
+        <set lineCount="7">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/scr/ChangeRequestBean.java" startLineNumber="139" endLineNumber="145"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/scr/ChangeRequestBean.java" startLineNumber="157" endLineNumber="163"/>
+        </set>
+        <set lineCount="7">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/report/TaskCreateBean.java" startLineNumber="416" endLineNumber="424"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/report/TaskCreateBean.java" startLineNumber="444" endLineNumber="451"/>
+        </set>
+        <set lineCount="7">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/condition/ChangeRuleSetBean.java" startLineNumber="301" endLineNumber="308"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/condition/NewRuleSetBean.java" startLineNumber="174" endLineNumber="181"/>
+        </set>
+        <set lineCount="7">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/rts/RtsManagerImpl.java" startLineNumber="186" endLineNumber="192"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/rts/RtsManagerImpl.java" startLineNumber="203" endLineNumber="209"/>
+        </set>
+        <set lineCount="7">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/model/history/ConditionRuleLog.java" startLineNumber="513" endLineNumber="519"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/model/history/ProductConditionLog.java" startLineNumber="190" endLineNumber="196"/>
+        </set>
+        <set lineCount="7">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/query/QueryConditionBean.java" startLineNumber="241" endLineNumber="250"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/query/QueryConditionBean.java" startLineNumber="259" endLineNumber="268"/>
+        </set>
+        <set lineCount="7">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/transformation/dao/model/IMSSG30513PRFEPart1.java" startLineNumber="31" endLineNumber="53"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/transformation/dao/model/IMSSG30513PRFEPart2.java" startLineNumber="27" endLineNumber="47"/>
+        </set>
+        <set lineCount="7">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/helper/LogHelper.java" startLineNumber="107" endLineNumber="113"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/helper/LogHelper.java" startLineNumber="180" endLineNumber="186"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/helper/LogHelper.java" startLineNumber="253" endLineNumber="259"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/helper/LogHelper.java" startLineNumber="328" endLineNumber="334"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/dt/DecisionTableBean.java" startLineNumber="668" endLineNumber="674"/>
+        </set>
+        <set lineCount="7">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/dao/ExtVarDao.java" startLineNumber="339" endLineNumber="345"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/dao/trigger/TriggerDaoImpl.java" startLineNumber="343" endLineNumber="349"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/trigger/TriggerDaoImpl.java" startLineNumber="339" endLineNumber="345"/>
+        </set>
+        <set lineCount="7">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/log/LogDaoImpl.java" startLineNumber="66" endLineNumber="72"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/log/LogDaoImpl.java" startLineNumber="82" endLineNumber="88"/>
+        </set>
+        <set lineCount="7">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/helper/DocumentationHelper.java" startLineNumber="67" endLineNumber="74"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/helper/DocumentationHelper.java" startLineNumber="111" endLineNumber="118"/>
+        </set>
+        <set lineCount="7">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/timesliceview/dao/ViewDaoImpl.java" startLineNumber="238" endLineNumber="246"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/timesliceview/dao/ViewDaoImpl.java" startLineNumber="293" endLineNumber="301"/>
+        </set>
+        <set lineCount="7">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/transformation/IMSCommand.java" startLineNumber="75" endLineNumber="82"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/transformation/IMSCommand.java" startLineNumber="200" endLineNumber="207"/>
+        </set>
+        <set lineCount="7">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/bom/DomainDaoImpl.java" startLineNumber="210" endLineNumber="216"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/bom/DomainDaoImpl.java" startLineNumber="291" endLineNumber="297"/>
+        </set>
+        <set lineCount="7">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/bom/DomainDaoImplBase.java" startLineNumber="50" endLineNumber="56"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/bom/DomainDaoImplBase.java" startLineNumber="93" endLineNumber="99"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/bom/DomainDaoImpl.java" startLineNumber="762" endLineNumber="768"/>
+        </set>
+        <set lineCount="7">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/bom/DomainDaoImpl.java" startLineNumber="463" endLineNumber="470"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/bom/DomainDaoImpl.java" startLineNumber="392" endLineNumber="399"/>
+        </set>
+        <set lineCount="7">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/helper/BomHelper.java" startLineNumber="122" endLineNumber="128"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/helper/BomHelper.java" startLineNumber="148" endLineNumber="154"/>
+        </set>
+        <set lineCount="7">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/query/QueryProfile.java" startLineNumber="84" endLineNumber="97"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/query/QueryRuleset.java" startLineNumber="93" endLineNumber="106"/>
+        </set>
+        <set lineCount="7">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/fincon/dao/FinconExtDao.java" startLineNumber="182" endLineNumber="188"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/fincon/dao/FinconExtDao.java" startLineNumber="210" endLineNumber="216"/>
+        </set>
+        <set lineCount="7">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/cct/dao/CCTDao.java" startLineNumber="158" endLineNumber="165"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/query/QueryBase.java" startLineNumber="206" endLineNumber="213"/>
+        </set>
+        <set lineCount="7">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/baseline/BaselineDaoImpl.java" startLineNumber="114" endLineNumber="122"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/scr/ChangeRequestDaoImpl.java" startLineNumber="485" endLineNumber="493"/>
+        </set>
+        <set lineCount="7">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/condition/ChangeRuleSetBean.java" startLineNumber="209" endLineNumber="216"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/condition/NewRuleSetBean.java" startLineNumber="260" endLineNumber="267"/>
+        </set>
+        <set lineCount="7">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/transformation/ReportUtil.java" startLineNumber="135" endLineNumber="151"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/transformation/ReportUtil.java" startLineNumber="169" endLineNumber="184"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/transformation/ReportUtil.java" startLineNumber="352" endLineNumber="367"/>
+        </set>
+        <set lineCount="7">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/DataIntegrationServiceImpl.java" startLineNumber="148" endLineNumber="154"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/DataIntegrationServiceImpl.java" startLineNumber="336" endLineNumber="342"/>
+        </set>
+        <set lineCount="7">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/condition/InheritRuleSetBean.java" startLineNumber="321" endLineNumber="330"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/condition/NewRuleSetBean.java" startLineNumber="558" endLineNumber="567"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/helper/TimesliceHelper.java" startLineNumber="124" endLineNumber="133"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/valueeditor/model/DateRange.java" startLineNumber="166" endLineNumber="175"/>
+        </set>
+        <set lineCount="7">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/transformation/dao/model/IMSSG30509.java" startLineNumber="244" endLineNumber="261"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/transformation/dao/model/IMSSG30512.java" startLineNumber="174" endLineNumber="191"/>
+        </set>
+        <set lineCount="7">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/bom/DomainDaoImpl.java" startLineNumber="807" endLineNumber="813"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/bom/DomainDaoImpl.java" startLineNumber="830" endLineNumber="836"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/bom/DomainDaoImplBase.java" startLineNumber="214" endLineNumber="220"/>
+        </set>
+        <set lineCount="7">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/rts/BaselineGeneratorImpl.java" startLineNumber="285" endLineNumber="291"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/rts/BaselineGeneratorImpl.java" startLineNumber="313" endLineNumber="319"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/rts/BaselineGeneratorImpl.java" startLineNumber="340" endLineNumber="346"/>
+        </set>
+        <set lineCount="7">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/scr/RulesetChange.java" startLineNumber="405" endLineNumber="411"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/scr/RulesetInheritance.java" startLineNumber="270" endLineNumber="276"/>
+        </set>
+        <set lineCount="7">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/archive/ArchiveServiceImpl.java" startLineNumber="520" endLineNumber="526"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/bom/ConditionChangeHandlerImpl.java" startLineNumber="71" endLineNumber="77"/>
+        </set>
+        <set lineCount="7">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/archive/ArchiveDaoImpl.java" startLineNumber="261" endLineNumber="268"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/mdb/CCTMDBDaoImpl.java" startLineNumber="122" endLineNumber="129"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/mdb/FinconMDBDaoImpl.java" startLineNumber="94" endLineNumber="101"/>
+        </set>
+        <set lineCount="7">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/auth/AuthBean.java" startLineNumber="64" endLineNumber="77"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/lodgment/LodgmentBean.java" startLineNumber="84" endLineNumber="97"/>
+        </set>
+        <set lineCount="7">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/cct/dao/CCTDao.java" startLineNumber="405" endLineNumber="411"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/cct/dao/CCTDao.java" startLineNumber="428" endLineNumber="434"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/cct/dao/CCTDao.java" startLineNumber="451" endLineNumber="457"/>
+        </set>
+        <set lineCount="7">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/query/ProductData.java" startLineNumber="345" endLineNumber="354"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/query/QueryBase.java" startLineNumber="397" endLineNumber="406"/>
+        </set>
+        <set lineCount="7">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/helper/CheckValueHelperUtil.java" startLineNumber="548" endLineNumber="554"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/helper/RTSHelper.java" startLineNumber="276" endLineNumber="282"/>
+        </set>
+        <set lineCount="7">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/query/QueryProductBean.java" startLineNumber="155" endLineNumber="166"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/query/QueryRulesetBean.java" startLineNumber="150" endLineNumber="161"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/query/QueryFeatureBean.java" startLineNumber="178" endLineNumber="189"/>
+        </set>
+        <set lineCount="7">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/profile/ColumnParseUtil.java" startLineNumber="270" endLineNumber="276"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/trigger/rule/ColumnParseUtil.java" startLineNumber="261" endLineNumber="267"/>
+        </set>
+        <set lineCount="7">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/auth/AuthBean.java" startLineNumber="106" endLineNumber="112"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/scr/ChangeRequestBean.java" startLineNumber="183" endLineNumber="189"/>
+        </set>
+        <set lineCount="7">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/timesliceview/ProductChangeHandler.java" startLineNumber="192" endLineNumber="201"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/timesliceview/ProductChangeHandler.java" startLineNumber="265" endLineNumber="274"/>
+        </set>
+        <set lineCount="7">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/LodgementControllerImpl.java" startLineNumber="618" endLineNumber="634"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/TimesliceObserverImpl.java" startLineNumber="213" endLineNumber="229"/>
+        </set>
+        <set lineCount="7">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/tools/compare/IMSPolicy.java" startLineNumber="446" endLineNumber="453"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/tools/compare/IMSPolicy.java" startLineNumber="474" endLineNumber="481"/>
+        </set>
+        <set lineCount="7">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/dao/ProductDepnDao.java" startLineNumber="31" endLineNumber="37"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/dao/ProductNegtDao.java" startLineNumber="91" endLineNumber="97"/>
+        </set>
+        <set lineCount="7">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/query/QueryConditionBean.java" startLineNumber="122" endLineNumber="144"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/query/QueryDeterminantBean.java" startLineNumber="78" endLineNumber="99"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/query/QueryProfileBean.java" startLineNumber="126" endLineNumber="147"/>
+        </set>
+        <set lineCount="7">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/services/bom/BomUpdaterImpl.java" startLineNumber="121" endLineNumber="127"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/services/bom/BomUpdaterImpl.java" startLineNumber="151" endLineNumber="157"/>
+        </set>
+        <set lineCount="7">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/archive/helper/ArchiveUtil.java" startLineNumber="85" endLineNumber="92"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/archive/ArchiveUtil.java" startLineNumber="52" endLineNumber="59"/>
+        </set>
+        <set lineCount="7">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/product/ProductVisibilityDaoImpl.java" startLineNumber="276" endLineNumber="283"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/product/ProductVisibilityDaoImpl.java" startLineNumber="547" endLineNumber="554"/>
+        </set>
+        <set lineCount="7">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/condition/ConditionManagerBean.java" startLineNumber="399" endLineNumber="405"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/dt/DecisionTableBeanBase.java" startLineNumber="315" endLineNumber="321"/>
+        </set>
+        <set lineCount="7">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/lodgment/LodgmentBean.java" startLineNumber="104" endLineNumber="113"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/lodgment/LodgmentBean.java" startLineNumber="133" endLineNumber="142"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/lodgment/LodgmentBean.java" startLineNumber="162" endLineNumber="170"/>
+        </set>
+        <set lineCount="7">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/transformation/dao/model/IMSSG30502.java" startLineNumber="44" endLineNumber="67"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/transformation/dao/model/IMSSG30503To17.java" startLineNumber="55" endLineNumber="78"/>
+        </set>
+        <set lineCount="7">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/dt/DecisionTableBean.java" startLineNumber="104" endLineNumber="110"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/dt/DecisionTableBean.java" startLineNumber="223" endLineNumber="229"/>
+        </set>
+        <set lineCount="7">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/timesliceview/dao/ConditionViewInheritanceRowCallbackHandler.java" startLineNumber="80" endLineNumber="86"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/timesliceview/dao/TimePointRowCallbackHandler.java" startLineNumber="46" endLineNumber="52"/>
+        </set>
+        <set lineCount="7">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/maintenance/MaintenanceListBean.java" startLineNumber="199" endLineNumber="205"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/maintenance/MaintenanceListBean.java" startLineNumber="341" endLineNumber="347"/>
+        </set>
+        <set lineCount="8">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/tools/compare/IMSPolicy.java" startLineNumber="78" endLineNumber="86"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/tools/compare/IMSPolicy.java" startLineNumber="140" endLineNumber="148"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/tools/compare/IMSPolicy.java" startLineNumber="106" endLineNumber="114"/>
+        </set>
+        <set lineCount="8">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/rts/RtsObserverPlainDbImpl.java" startLineNumber="159" endLineNumber="173"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/rts/RtsObserverImpl.java" startLineNumber="160" endLineNumber="174"/>
+        </set>
+        <set lineCount="8">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/transformation/dao/model/IMSSG30513PRFEPart2.java" startLineNumber="150" endLineNumber="175"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/transformation/dao/model/IMSSG30513PRFEPart1.java" startLineNumber="120" endLineNumber="145"/>
+        </set>
+        <set lineCount="8">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/bom/DomainDaoImpl.java" startLineNumber="775" endLineNumber="783"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/bom/DomainDaoImpl.java" startLineNumber="763" endLineNumber="771"/>
+        </set>
+        <set lineCount="8">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/scr/RulesetInheritance.java" startLineNumber="558" endLineNumber="567"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/scr/RulesetChange.java" startLineNumber="713" endLineNumber="720"/>
+        </set>
+        <set lineCount="8">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/condition/NewRuleSetBean.java" startLineNumber="150" endLineNumber="169"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/condition/ChangeRuleSetBean.java" startLineNumber="118" endLineNumber="137"/>
+        </set>
+        <set lineCount="8">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/helper/diff/ProductAvailabilityDiffHelperImpl.java" startLineNumber="100" endLineNumber="107"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/helper/diff/ConditionNegotiabilityDiffHelperImpl.java" startLineNumber="118" endLineNumber="125"/>
+        </set>
+        <set lineCount="8">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/product/Eligibility.java" startLineNumber="38" endLineNumber="62"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/product/Availability.java" startLineNumber="36" endLineNumber="60"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/helper/diff/ProductEligibilityTimeslice.java" startLineNumber="59" endLineNumber="83"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/helper/diff/ProductAvailabilityTimeslice.java" startLineNumber="49" endLineNumber="73"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/product/ConditionNegotiability.java" startLineNumber="49" endLineNumber="73"/>
+        </set>
+        <set lineCount="8">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/query/QueryCondition.java" startLineNumber="107" endLineNumber="121"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/query/QueryRuleset.java" startLineNumber="94" endLineNumber="109"/>
+        </set>
+        <set lineCount="8">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/product/ProductVisibilityDaoImpl.java" startLineNumber="128" endLineNumber="135"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/product/ProductVisibilityDaoImpl.java" startLineNumber="108" endLineNumber="115"/>
+        </set>
+        <set lineCount="8">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/trigger/TriggerDaoImpl.java" startLineNumber="159" endLineNumber="171"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/dao/trigger/TriggerDaoImpl.java" startLineNumber="174" endLineNumber="186"/>
+        </set>
+        <set lineCount="8">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/timesliceview/model/ProductDeletion.java" startLineNumber="26" endLineNumber="50"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/timesliceview/model/ConditionView.java" startLineNumber="43" endLineNumber="67"/>
+        </set>
+        <set lineCount="8">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/rts/view/TimesliceView.java" startLineNumber="26" endLineNumber="50"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/rts/cmd/InsertTimesliceCommand.java" startLineNumber="92" endLineNumber="116"/>
+        </set>
+        <set lineCount="8">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/cct/util/NVReportBean.java" startLineNumber="24" endLineNumber="51"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/cct/util/CLVReportBean.java" startLineNumber="25" endLineNumber="49"/>
+        </set>
+        <set lineCount="8">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/transformation/dao/model/IMSSG30501.java" startLineNumber="64" endLineNumber="89"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/transformation/dao/model/IMSSG30503To17.java" startLineNumber="133" endLineNumber="158"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/transformation/dao/model/IMSSG30502.java" startLineNumber="106" endLineNumber="131"/>
+        </set>
+        <set lineCount="8">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/timesliceview/model/Inheritance.java" startLineNumber="74" endLineNumber="98"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/timesliceview/model/ConditionView.java" startLineNumber="58" endLineNumber="82"/>
+        </set>
+        <set lineCount="8">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/bom/DomainBeanHelper.java" startLineNumber="240" endLineNumber="248"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/bom/DomainBeanHelper.java" startLineNumber="154" endLineNumber="162"/>
+        </set>
+        <set lineCount="8">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/transformation/dao/model/IMSSG30515.java" startLineNumber="165" endLineNumber="176"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/transformation/dao/model/IMSSG30509.java" startLineNumber="281" endLineNumber="293"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/transformation/dao/model/IMSSG30514.java" startLineNumber="201" endLineNumber="212"/>
+        </set>
+        <set lineCount="8">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/transformation/dao/model/IMSSG30500.java" startLineNumber="99" endLineNumber="111"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/transformation/dao/model/IMSSG23053.java" startLineNumber="159" endLineNumber="170"/>
+        </set>
+        <set lineCount="8">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/scr/RulesetChange.java" startLineNumber="714" endLineNumber="721"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/scr/RulesetChange.java" startLineNumber="652" endLineNumber="659"/>
+        </set>
+        <set lineCount="8">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/scr/ProductChange.java" startLineNumber="185" endLineNumber="209"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/rts/cmd/ChangeProductCommand.java" startLineNumber="143" endLineNumber="167"/>
+        </set>
+        <set lineCount="8">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/cct/util/ReportUtil.java" startLineNumber="720" endLineNumber="727"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/cct/util/ReportUtil.java" startLineNumber="718" endLineNumber="725"/>
+        </set>
+        <set lineCount="8">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/transformation/dao/model/IMSSG30513Root.java" startLineNumber="358" endLineNumber="366"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/transformation/dao/model/IMSSG30513Root.java" startLineNumber="275" endLineNumber="284"/>
+        </set>
+        <set lineCount="8">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/product/ProductVisibilityDaoImpl.java" startLineNumber="350" endLineNumber="358"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/product/ProductVisibilityDaoImpl.java" startLineNumber="456" endLineNumber="464"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/product/ProductVisibilityDaoImpl.java" startLineNumber="382" endLineNumber="390"/>
+        </set>
+        <set lineCount="8">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/prodclone/ProductCloningManagerImpl.java" startLineNumber="260" endLineNumber="267"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/prodclone/ProductCloningManagerImpl.java" startLineNumber="236" endLineNumber="243"/>
+        </set>
+        <set lineCount="8">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/helper/RTSHelper.java" startLineNumber="701" endLineNumber="708"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/helper/RTSHelper.java" startLineNumber="192" endLineNumber="199"/>
+        </set>
+        <set lineCount="8">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/transformation/dao/model/IMSSG30513DEPNMid.java" startLineNumber="175" endLineNumber="191"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/transformation/dao/model/IMSSG30513DEPNEnd.java" startLineNumber="83" endLineNumber="99"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/transformation/dao/model/IMSSG30510End.java" startLineNumber="235" endLineNumber="251"/>
+        </set>
+        <set lineCount="8">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/dao/RulesetDao.java" startLineNumber="539" endLineNumber="547"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/dao/RulesetDao.java" startLineNumber="490" endLineNumber="498"/>
+        </set>
+        <set lineCount="8">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/ProductFeature.java" startLineNumber="414" endLineNumber="424"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/ProductFeature.java" startLineNumber="402" endLineNumber="412"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/ProductFeature.java" startLineNumber="390" endLineNumber="400"/>
+        </set>
+        <set lineCount="8">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/LodgementControllerImpl.java" startLineNumber="61" endLineNumber="87"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/cctctrl/CctControllerImpl.java" startLineNumber="74" endLineNumber="100"/>
+        </set>
+        <set lineCount="8">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/model/timeslice/Timeslice.java" startLineNumber="36" endLineNumber="58"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/model/product/ProductConditionRule.java" startLineNumber="292" endLineNumber="311"/>
+        </set>
+        <set lineCount="8">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/bom/SelectDeterminantBean.java" startLineNumber="124" endLineNumber="132"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/bom/DomainBeanHelper.java" startLineNumber="454" endLineNumber="462"/>
+        </set>
+        <set lineCount="8">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/scr/ChangeRequestBean.java" startLineNumber="370" endLineNumber="385"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/auth/AuthBean.java" startLineNumber="144" endLineNumber="159"/>
+        </set>
+        <set lineCount="8">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/maintenance/MaintenanceListBean.java" startLineNumber="294" endLineNumber="301"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/maintenance/MaintenanceListBean.java" startLineNumber="279" endLineNumber="286"/>
+        </set>
+        <set lineCount="8">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/model/history/ProductLog.java" startLineNumber="93" endLineNumber="112"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/model/history/InheritInfo.java" startLineNumber="137" endLineNumber="156"/>
+        </set>
+        <set lineCount="8">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/model/product/Negotiability.java" startLineNumber="45" endLineNumber="64"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/model/product/Eligibility.java" startLineNumber="39" endLineNumber="61"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/model/product/Availability.java" startLineNumber="39" endLineNumber="58"/>
+        </set>
+        <set lineCount="8">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/transformation/dao/model/IMSSG30513Root.java" startLineNumber="344" endLineNumber="353"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/transformation/dao/model/IMSSG30513Root.java" startLineNumber="258" endLineNumber="267"/>
+        </set>
+        <set lineCount="8">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/dao/RulesetDao.java" startLineNumber="408" endLineNumber="415"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/dao/ProductNegtDao.java" startLineNumber="154" endLineNumber="161"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/ProductFeature.java" startLineNumber="218" endLineNumber="225"/>
+        </set>
+        <set lineCount="8">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/dao/MappingDao.java" startLineNumber="203" endLineNumber="212"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/dao/MappingDao.java" startLineNumber="182" endLineNumber="191"/>
+        </set>
+        <set lineCount="8">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/report/TaskCreateBean.java" startLineNumber="542" endLineNumber="561"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/report/ReportTasksBean.java" startLineNumber="601" endLineNumber="620"/>
+        </set>
+        <set lineCount="8">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/transformation/dao/model/IMSSG30510End.java" startLineNumber="153" endLineNumber="178"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/transformation/dao/model/IMSSG30509.java" startLineNumber="83" endLineNumber="108"/>
+        </set>
+        <set lineCount="8">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/ProductTimeSlice.java" startLineNumber="100" endLineNumber="113"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/ProductNegtTimeslice.java" startLineNumber="79" endLineNumber="91"/>
+        </set>
+        <set lineCount="8">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/cct/ec/NegotiabilityViolation.java" startLineNumber="224" endLineNumber="234"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/cct/CCTRunner.java" startLineNumber="595" endLineNumber="604"/>
+        </set>
+        <set lineCount="8">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/query/QueryProfile.java" startLineNumber="108" endLineNumber="122"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/query/QueryProduct.java" startLineNumber="89" endLineNumber="103"/>
+        </set>
+        <set lineCount="8">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/transformation/dao/model/IMSSG30515.java" startLineNumber="117" endLineNumber="125"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/transformation/dao/model/IMSSG30509.java" startLineNumber="231" endLineNumber="239"/>
+        </set>
+        <set lineCount="8">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/fincon/dao/model/ScgRule.java" startLineNumber="39" endLineNumber="63"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/fincon/dao/model/FeatRule.java" startLineNumber="30" endLineNumber="55"/>
+        </set>
+        <set lineCount="8">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/cct/CCTDaoImpl.java" startLineNumber="375" endLineNumber="384"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/cct/CCTDaoImpl.java" startLineNumber="362" endLineNumber="371"/>
+        </set>
+        <set lineCount="8">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/dao/ScrDao.java" startLineNumber="666" endLineNumber="673"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/dao/ScrDao.java" startLineNumber="642" endLineNumber="649"/>
+        </set>
+        <set lineCount="8">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/LodgementControllerImpl.java" startLineNumber="320" endLineNumber="327"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/LodgementControllerImpl.java" startLineNumber="268" endLineNumber="275"/>
+        </set>
+        <set lineCount="8">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/model/history/ProductLog.java" startLineNumber="57" endLineNumber="76"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/model/history/ProductConditionLog.java" startLineNumber="62" endLineNumber="81"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/model/history/InheritInfo.java" startLineNumber="65" endLineNumber="84"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/model/history/ConditionRuleLog.java" startLineNumber="152" endLineNumber="171"/>
+        </set>
+        <set lineCount="8">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/helper/diff/ProductEligibilityTextComparator.java" startLineNumber="214" endLineNumber="236"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/helper/diff/ConditionNegotiabilityTimeslice.java" startLineNumber="64" endLineNumber="88"/>
+        </set>
+        <set lineCount="8">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/scr/RulesetInheritance.java" startLineNumber="511" endLineNumber="520"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/scr/RulesetInheritance.java" startLineNumber="436" endLineNumber="445"/>
+        </set>
+        <set lineCount="8">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/bom/DomainDaoImpl.java" startLineNumber="375" endLineNumber="383"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/bom/DomainDaoImpl.java" startLineNumber="344" endLineNumber="352"/>
+        </set>
+        <set lineCount="8">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/validator/RulesetExistenceValidator.java" startLineNumber="59" endLineNumber="67"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/validator/ProductRuleExistenceValidator.java" startLineNumber="64" endLineNumber="72"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/validator/CopyRulesetValidator.java" startLineNumber="58" endLineNumber="66"/>
+        </set>
+        <set lineCount="8">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/helper/CheckValueHelperUtil.java" startLineNumber="537" endLineNumber="546"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/archive/helper/RTSHelper.java" startLineNumber="50" endLineNumber="59"/>
+        </set>
+        <set lineCount="8">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/transformation/dao/model/IMSSG30510Root.java" startLineNumber="75" endLineNumber="100"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/transformation/dao/model/IMSSG30510End.java" startLineNumber="70" endLineNumber="95"/>
+        </set>
+        <set lineCount="8">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/lodgment/LodgmentBean.java" startLineNumber="234" endLineNumber="241"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/auth/AuthBean.java" startLineNumber="132" endLineNumber="139"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/maintenance/MaintenanceListBean.java" startLineNumber="719" endLineNumber="726"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/scr/ChangeRequestBean.java" startLineNumber="359" endLineNumber="366"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/condition/ConditionManagerBean.java" startLineNumber="216" endLineNumber="223"/>
+        </set>
+        <set lineCount="8">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/model/history/InheritInfo.java" startLineNumber="113" endLineNumber="132"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/model/history/ConditionRuleLog.java" startLineNumber="224" endLineNumber="243"/>
+        </set>
+        <set lineCount="8">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/archive/ArchiveUtil.java" startLineNumber="129" endLineNumber="137"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/archive/ArchiveUtil.java" startLineNumber="112" endLineNumber="120"/>
+        </set>
+        <set lineCount="8">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/model/history/ProductLog.java" startLineNumber="123" endLineNumber="142"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/model/history/ProductConditionLog.java" startLineNumber="134" endLineNumber="153"/>
+        </set>
+        <set lineCount="8">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/bom/DomainDaoImpl.java" startLineNumber="390" endLineNumber="398"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/bom/DomainDaoImpl.java" startLineNumber="355" endLineNumber="363"/>
+        </set>
+        <set lineCount="8">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/helper/DecisionTableHelper.java" startLineNumber="179" endLineNumber="186"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/helper/DecisionTableHelper.java" startLineNumber="151" endLineNumber="158"/>
+        </set>
+        <set lineCount="8">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/lock/LockDaoImpl.java" startLineNumber="216" endLineNumber="229"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/lock/LockDaoImpl.java" startLineNumber="90" endLineNumber="104"/>
+        </set>
+        <set lineCount="8">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/timesliceview/model/Ruleset.java" startLineNumber="79" endLineNumber="103"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/timesliceview/model/Inheritance.java" startLineNumber="44" endLineNumber="68"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/prodeletion/SimpleInheritanceLog.java" startLineNumber="44" endLineNumber="66"/>
+        </set>
+        <set lineCount="8">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/tools/compare/IMSPolicy.java" startLineNumber="731" endLineNumber="738"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/tools/compare/IMSPolicy.java" startLineNumber="330" endLineNumber="337"/>
+        </set>
+        <set lineCount="8">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/scr/RulesetInheritance.java" startLineNumber="519" endLineNumber="527"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/scr/RulesetChange.java" startLineNumber="679" endLineNumber="686"/>
+        </set>
+        <set lineCount="9">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/dao/MappingDao.java" startLineNumber="512" endLineNumber="520"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/dao/MappingDao.java" startLineNumber="532" endLineNumber="540"/>
+        </set>
+        <set lineCount="9">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/DataIntegrationServiceImpl.java" startLineNumber="99" endLineNumber="112"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/DataIntegrationServiceImpl.java" startLineNumber="206" endLineNumber="217"/>
+        </set>
+        <set lineCount="9">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/condition/InheritRuleSetBean.java" startLineNumber="309" endLineNumber="318"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/condition/NewRuleSetBean.java" startLineNumber="546" endLineNumber="555"/>
+        </set>
+        <set lineCount="9">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/timesliceview/ConditionChangeHandlerImpl.java" startLineNumber="58" endLineNumber="66"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/timesliceview/ViewConstant.java" startLineNumber="43" endLineNumber="51"/>
+        </set>
+        <set lineCount="9">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/fincon/dao/FinconReportDao.java" startLineNumber="102" endLineNumber="112"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/cct/dao/CCTReportDao.java" startLineNumber="99" endLineNumber="109"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/archive/dao/ArchiveReportDao.java" startLineNumber="126" endLineNumber="136"/>
+        </set>
+        <set lineCount="9">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/scr/RulesetInheritance.java" startLineNumber="461" endLineNumber="470"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/scr/RulesetInheritance.java" startLineNumber="535" endLineNumber="544"/>
+        </set>
+        <set lineCount="9">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/condition/ChangeRuleSetBean.java" startLineNumber="218" endLineNumber="226"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/condition/NewRuleSetBean.java" startLineNumber="268" endLineNumber="276"/>
+        </set>
+        <set lineCount="9">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/rts/BaselineGeneratorImpl.java" startLineNumber="293" endLineNumber="304"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/rts/BaselineGeneratorImpl.java" startLineNumber="321" endLineNumber="332"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/rts/BaselineGeneratorImpl.java" startLineNumber="348" endLineNumber="359"/>
+        </set>
+        <set lineCount="9">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/cct/CCTTasksBean.java" startLineNumber="214" endLineNumber="223"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/product/ProductDocumentBean.java" startLineNumber="121" endLineNumber="130"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/report/ReportTasksBean.java" startLineNumber="358" endLineNumber="367"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/report/ReportTasksBean.java" startLineNumber="441" endLineNumber="450"/>
+        </set>
+        <set lineCount="9">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/transformation/dao/model/IMSSG30509.java" startLineNumber="265" endLineNumber="276"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/transformation/dao/model/IMSSG30512.java" startLineNumber="195" endLineNumber="206"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/transformation/dao/model/IMSSG30515.java" startLineNumber="149" endLineNumber="160"/>
+        </set>
+        <set lineCount="9">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/rts/RtsObserverImpl.java" startLineNumber="193" endLineNumber="208"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/rts/RtsObserverPlainDbImpl.java" startLineNumber="196" endLineNumber="211"/>
+        </set>
+        <set lineCount="9">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/cct/CCTTasksBean.java" startLineNumber="114" endLineNumber="126"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/cct/CCTTasksBean.java" startLineNumber="175" endLineNumber="185"/>
+        </set>
+        <set lineCount="9">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/tools/compare/IMSPolicy.java" startLineNumber="771" endLineNumber="780"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/tools/compare/IMSPolicy.java" startLineNumber="787" endLineNumber="796"/>
+        </set>
+        <set lineCount="9">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/cct/CCTListBean.java" startLineNumber="221" endLineNumber="230"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/lodgment/LodgmentBean.java" startLineNumber="259" endLineNumber="268"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/auth/AuthBean.java" startLineNumber="160" endLineNumber="169"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/report/ReportTasksBean.java" startLineNumber="532" endLineNumber="541"/>
+        </set>
+        <set lineCount="9">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/profile/DecisionTableUtil.java" startLineNumber="28" endLineNumber="57"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/trigger/rule/DecisionTableUtil.java" startLineNumber="29" endLineNumber="57"/>
+        </set>
+        <set lineCount="9">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/product/Availability.java" startLineNumber="31" endLineNumber="60"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/product/Eligibility.java" startLineNumber="33" endLineNumber="62"/>
+        </set>
+        <set lineCount="9">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/mdb/MessageHandler.java" startLineNumber="497" endLineNumber="506"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/mdb/MessageHandler.java" startLineNumber="579" endLineNumber="588"/>
+        </set>
+        <set lineCount="9">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/cct/CCTDaoImpl.java" startLineNumber="228" endLineNumber="237"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/cct/CCTDaoImpl.java" startLineNumber="290" endLineNumber="299"/>
+        </set>
+        <set lineCount="9">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/cct/CCTTasksBean.java" startLineNumber="184" endLineNumber="194"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/report/ReportTasksBean.java" startLineNumber="329" endLineNumber="340"/>
+        </set>
+        <set lineCount="9">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/model/product/AddProductInfo.java" startLineNumber="33" endLineNumber="59"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/model/product/CloneProductInfo.java" startLineNumber="43" endLineNumber="69"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/model/product/DeleteProductInfo.java" startLineNumber="19" endLineNumber="42"/>
+        </set>
+        <set lineCount="9">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/condition/ChangeRuleSetBean.java" startLineNumber="366" endLineNumber="374"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/condition/NewRuleSetBean.java" startLineNumber="500" endLineNumber="508"/>
+        </set>
+        <set lineCount="9">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/scr/RulesetInheritance.java" startLineNumber="487" endLineNumber="496"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/scr/RulesetInheritance.java" startLineNumber="560" endLineNumber="569"/>
+        </set>
+        <set lineCount="9">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/lock/LockDaoImpl.java" startLineNumber="109" endLineNumber="117"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/lock/LockDaoImpl.java" startLineNumber="233" endLineNumber="241"/>
+        </set>
+        <set lineCount="9">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/bom/NewRulesetHelper.java" startLineNumber="182" endLineNumber="192"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/bom/NewRulesetHelper.java" startLineNumber="219" endLineNumber="230"/>
+        </set>
+        <set lineCount="9">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/scr/RulesetChange.java" startLineNumber="629" endLineNumber="637"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/scr/RulesetChange.java" startLineNumber="691" endLineNumber="699"/>
+        </set>
+        <set lineCount="9">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/bom/Domain.java" startLineNumber="23" endLineNumber="39"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/trigger/bom/Domain.java" startLineNumber="11" endLineNumber="27"/>
+        </set>
+        <set lineCount="9">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/query/QueryCondition.java" startLineNumber="138" endLineNumber="156"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/query/QueryFeature.java" startLineNumber="111" endLineNumber="129"/>
+        </set>
+        <set lineCount="9">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/cct/CCTTasksBean.java" startLineNumber="141" endLineNumber="150"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/report/ReportTasksBean.java" startLineNumber="275" endLineNumber="284"/>
+        </set>
+        <set lineCount="9">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/scr/RulesetChange.java" startLineNumber="355" endLineNumber="364"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/scr/RulesetInheritance.java" startLineNumber="224" endLineNumber="233"/>
+        </set>
+        <set lineCount="9">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/tools/compare/RTSRuleset.java" startLineNumber="309" endLineNumber="317"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/tools/compare/RTSRuleset.java" startLineNumber="332" endLineNumber="340"/>
+        </set>
+        <set lineCount="9">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/helper/RTSHelper.java" startLineNumber="768" endLineNumber="785"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/helper/RTSHelper.java" startLineNumber="786" endLineNumber="805"/>
+        </set>
+        <set lineCount="9">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/condition/ConditionManagerBean.java" startLineNumber="215" endLineNumber="223"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/scr/ChangeRequestBean.java" startLineNumber="358" endLineNumber="366"/>
+        </set>
+        <set lineCount="9">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/baseline/BaselineDaoImpl.java" startLineNumber="101" endLineNumber="109"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/scr/ChangeRequestDaoImpl.java" startLineNumber="471" endLineNumber="479"/>
+        </set>
+        <set lineCount="9">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/bom/DomainDaoImpl.java" startLineNumber="377" endLineNumber="386"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/bom/DomainDaoImpl.java" startLineNumber="448" endLineNumber="457"/>
+        </set>
+        <set lineCount="10">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/lodgment/LodgmentBean.java" startLineNumber="201" endLineNumber="210"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/cct/CCTListBean.java" startLineNumber="154" endLineNumber="164"/>
+        </set>
+        <set lineCount="10">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/transformation/ReportUtil.java" startLineNumber="250" endLineNumber="259"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/transformation/ReportUtil.java" startLineNumber="195" endLineNumber="204"/>
+        </set>
+        <set lineCount="10">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/trigger/rule/ConditionRule.java" startLineNumber="26" endLineNumber="56"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/ConditionRule.java" startLineNumber="35" endLineNumber="65"/>
+        </set>
+        <set lineCount="10">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/timesliceview/model/Timeslice.java" startLineNumber="63" endLineNumber="94"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/timesliceview/model/TimePoint.java" startLineNumber="97" endLineNumber="126"/>
+        </set>
+        <set lineCount="10">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/dt/DecisionTableBean.java" startLineNumber="727" endLineNumber="736"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/condition/NewRuleSetBean.java" startLineNumber="338" endLineNumber="347"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/condition/InheritRuleSetBean.java" startLineNumber="218" endLineNumber="227"/>
+        </set>
+        <set lineCount="10">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/scr/RulesetInheritance.java" startLineNumber="603" endLineNumber="618"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/scr/RulesetChange.java" startLineNumber="744" endLineNumber="757"/>
+        </set>
+        <set lineCount="10">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/dao/MappingDao.java" startLineNumber="493" endLineNumber="503"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/dao/MappingDao.java" startLineNumber="513" endLineNumber="523"/>
+        </set>
+        <set lineCount="10">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/scr/ChangeRequestBean.java" startLineNumber="359" endLineNumber="369"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/lodgment/LodgmentBean.java" startLineNumber="234" endLineNumber="244"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/auth/AuthBean.java" startLineNumber="132" endLineNumber="142"/>
+        </set>
+        <set lineCount="10">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/dao/ExtVarDao.java" startLineNumber="177" endLineNumber="186"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/dao/ExtVarDao.java" startLineNumber="135" endLineNumber="144"/>
+        </set>
+        <set lineCount="10">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/LodgementControllerImpl.java" startLineNumber="217" endLineNumber="226"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/LodgementControllerImpl.java" startLineNumber="172" endLineNumber="181"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/LodgementControllerImpl.java" startLineNumber="131" endLineNumber="140"/>
+        </set>
+        <set lineCount="10">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/tools/compare/RTSRuleset.java" startLineNumber="192" endLineNumber="203"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/tools/compare/IMSPolicy.java" startLineNumber="407" endLineNumber="419"/>
+        </set>
+        <set lineCount="10">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/cct/CCTTasksBean.java" startLineNumber="142" endLineNumber="152"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/cct/CCTTasksBean.java" startLineNumber="215" endLineNumber="225"/>
+        </set>
+        <set lineCount="10">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/ProductTimeSlice.java" startLineNumber="532" endLineNumber="546"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/ProductTimeSlice.java" startLineNumber="494" endLineNumber="507"/>
+        </set>
+        <set lineCount="10">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/scr/RulesetInheritance.java" startLineNumber="546" endLineNumber="556"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/scr/RulesetChange.java" startLineNumber="701" endLineNumber="711"/>
+        </set>
+        <set lineCount="10">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/helper/DecisionTableHelperBase.java" startLineNumber="387" endLineNumber="396"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/helper/DecisionTableHelper.java" startLineNumber="110" endLineNumber="119"/>
+        </set>
+        <set lineCount="10">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/cct/dao/CCTDao.java" startLineNumber="451" endLineNumber="460"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/cct/dao/CCTDao.java" startLineNumber="428" endLineNumber="437"/>
+        </set>
+        <set lineCount="10">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/report/ReportTasksBean.java" startLineNumber="441" endLineNumber="451"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/report/ReportTasksBean.java" startLineNumber="358" endLineNumber="368"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/cct/CCTTasksBean.java" startLineNumber="214" endLineNumber="224"/>
+        </set>
+        <set lineCount="10">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/lodgment/LodgmentBean.java" startLineNumber="258" endLineNumber="268"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/cct/CCTListBean.java" startLineNumber="220" endLineNumber="230"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/auth/AuthBean.java" startLineNumber="159" endLineNumber="169"/>
+        </set>
+        <set lineCount="10">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/tools/compare/IMSPolicy.java" startLineNumber="461" endLineNumber="471"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/tools/compare/IMSPolicy.java" startLineNumber="429" endLineNumber="439"/>
+        </set>
+        <set lineCount="10">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/product/ProductVisibilityDaoImpl.java" startLineNumber="454" endLineNumber="465"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/product/ProductVisibilityDaoImpl.java" startLineNumber="380" endLineNumber="391"/>
+        </set>
+        <set lineCount="10">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/profile/Timeslice.java" startLineNumber="609" endLineNumber="620"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/profile/Timeslice.java" startLineNumber="595" endLineNumber="606"/>
+        </set>
+        <set lineCount="10">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/query/QueryDeterminantBean.java" startLineNumber="135" endLineNumber="154"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/query/QueryConditionBean.java" startLineNumber="162" endLineNumber="181"/>
+        </set>
+        <set lineCount="10">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/condition/NewRuleSetBean.java" startLineNumber="758" endLineNumber="767"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/bom/NewRulesetHelper.java" startLineNumber="70" endLineNumber="79"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/dt/DecisionTableBean.java" startLineNumber="538" endLineNumber="547"/>
+        </set>
+        <set lineCount="10">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/log/LogDaoImplBase.java" startLineNumber="474" endLineNumber="489"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/log/LogDaoImplBase.java" startLineNumber="453" endLineNumber="469"/>
+        </set>
+        <set lineCount="10">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/scr/RulesetInheritance.java" startLineNumber="207" endLineNumber="216"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/scr/RulesetChange.java" startLineNumber="338" endLineNumber="347"/>
+        </set>
+        <set lineCount="10">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/services/bom/StaticCondition.java" startLineNumber="311" endLineNumber="321"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/services/bom/StaticCondition.java" startLineNumber="276" endLineNumber="286"/>
+        </set>
+        <set lineCount="10">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/tools/IMSRTSCompare.java" startLineNumber="606" endLineNumber="616"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/tools/IMSRTSCompare.java" startLineNumber="543" endLineNumber="553"/>
+        </set>
+        <set lineCount="10">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/scr/RulesetInheritance.java" startLineNumber="158" endLineNumber="174"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/scr/RulesetChange.java" startLineNumber="278" endLineNumber="297"/>
+        </set>
+        <set lineCount="10">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/util/Messages.java" startLineNumber="42" endLineNumber="59"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/util/ErrorMessages.java" startLineNumber="42" endLineNumber="60"/>
+        </set>
+        <set lineCount="10">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/transformation/IMSProduct.java" startLineNumber="331" endLineNumber="342"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/transformation/IMSProduct.java" startLineNumber="401" endLineNumber="412"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/transformation/IMSProduct.java" startLineNumber="366" endLineNumber="377"/>
+        </set>
+        <set lineCount="11">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/bom/DomainDaoImpl.java" startLineNumber="807" endLineNumber="818"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/bom/DomainDaoImpl.java" startLineNumber="830" endLineNumber="841"/>
+        </set>
+        <set lineCount="11">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/dt/DecisionTableBean.java" startLineNumber="177" endLineNumber="187"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/product/ProductTreeBeanBase.java" startLineNumber="667" endLineNumber="677"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/lodgment/LodgmentBean.java" startLineNumber="454" endLineNumber="464"/>
+        </set>
+        <set lineCount="11">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/cct/util/ReportUtil.java" startLineNumber="583" endLineNumber="594"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/cct/util/ReportUtil.java" startLineNumber="698" endLineNumber="709"/>
+        </set>
+        <set lineCount="11">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/ProductTimeSlice.java" startLineNumber="467" endLineNumber="478"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/ProductTimeSlice.java" startLineNumber="516" endLineNumber="527"/>
+        </set>
+        <set lineCount="11">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/helper/diff/ProductEligibilityTimeslice.java" startLineNumber="59" endLineNumber="97"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/product/Eligibility.java" startLineNumber="38" endLineNumber="76"/>
+        </set>
+        <set lineCount="11">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/cct/CCTListBean.java" startLineNumber="233" endLineNumber="244"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/lodgment/LodgmentBean.java" startLineNumber="277" endLineNumber="288"/>
+        </set>
+        <set lineCount="11">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/baseline/BaselineDaoImpl.java" startLineNumber="469" endLineNumber="487"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/scr/ChangeRequestDaoImpl.java" startLineNumber="764" endLineNumber="781"/>
+        </set>
+        <set lineCount="11">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/dao/ProductDao.java" startLineNumber="332" endLineNumber="344"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/dao/ProductDao.java" startLineNumber="353" endLineNumber="365"/>
+        </set>
+        <set lineCount="11">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/transformation/dao/model/IMSSG30513Root.java" startLineNumber="264" endLineNumber="277"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/transformation/dao/model/IMSSG30513Root.java" startLineNumber="508" endLineNumber="521"/>
+        </set>
+        <set lineCount="11">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/dt/DecisionTableBeanBase.java" startLineNumber="651" endLineNumber="662"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/condition/InheritRuleSetBean.java" startLineNumber="176" endLineNumber="187"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/condition/NewRuleSetBean.java" startLineNumber="581" endLineNumber="592"/>
+        </set>
+        <set lineCount="11">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/transformation/dao/model/IMSSG30513Root.java" startLineNumber="312" endLineNumber="327"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/transformation/dao/model/IMSSG30513Root.java" startLineNumber="386" endLineNumber="401"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/transformation/dao/model/IMSSG30513Root.java" startLineNumber="471" endLineNumber="486"/>
+        </set>
+        <set lineCount="11">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/condition/ChangeRuleSetBean.java" startLineNumber="154" endLineNumber="184"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/condition/NewRuleSetBean.java" startLineNumber="222" endLineNumber="252"/>
+        </set>
+        <set lineCount="11">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/transformation/IMSProduct.java" startLineNumber="365" endLineNumber="377"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/transformation/IMSProduct.java" startLineNumber="400" endLineNumber="412"/>
+        </set>
+        <set lineCount="11">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/tools/IMSRTSCompare.java" startLineNumber="526" endLineNumber="538"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/tools/IMSRTSCompare.java" startLineNumber="556" endLineNumber="568"/>
+        </set>
+        <set lineCount="11">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/model/cct/CCTTask.java" startLineNumber="72" endLineNumber="83"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/model/cct/CCTTask.java" startLineNumber="201" endLineNumber="212"/>
+        </set>
+        <set lineCount="11">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/scr/ChangeRequestDaoImpl.java" startLineNumber="662" endLineNumber="672"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/scr/ChangeRequestDaoImpl.java" startLineNumber="727" endLineNumber="737"/>
+        </set>
+        <set lineCount="11">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/archive/helper/RTSHelper.java" startLineNumber="212" endLineNumber="226"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/helper/CheckValueHelperUtil.java" startLineNumber="593" endLineNumber="607"/>
+        </set>
+        <set lineCount="11">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/LodgementUtilities.java" startLineNumber="258" endLineNumber="268"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/LodgementUtilities.java" startLineNumber="285" endLineNumber="295"/>
+        </set>
+        <set lineCount="11">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/condition/NewRuleSetBean.java" startLineNumber="745" endLineNumber="755"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/dt/DecisionTableBean.java" startLineNumber="525" endLineNumber="535"/>
+        </set>
+        <set lineCount="11">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/scr/ChangeRequestCreateBean.java" startLineNumber="215" endLineNumber="253"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/model/scr/ChangeRequest.java" startLineNumber="343" endLineNumber="382"/>
+        </set>
+        <set lineCount="11">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/cct/CCTListBean.java" startLineNumber="247" endLineNumber="284"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/lodgment/LodgmentBean.java" startLineNumber="305" endLineNumber="342"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/scr/ChangeRequestBean.java" startLineNumber="450" endLineNumber="487"/>
+        </set>
+        <set lineCount="12">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/product/ProductTreeBeanBase.java" startLineNumber="384" endLineNumber="397"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/dt/DecisionTableBean.java" startLineNumber="191" endLineNumber="204"/>
+        </set>
+        <set lineCount="12">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/scr/RulesetInheritance.java" startLineNumber="345" endLineNumber="362"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/scr/RulesetChange.java" startLineNumber="487" endLineNumber="502"/>
+        </set>
+        <set lineCount="12">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/log/LogDaoImplBase.java" startLineNumber="248" endLineNumber="259"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/log/LogDaoImplBase.java" startLineNumber="173" endLineNumber="184"/>
+        </set>
+        <set lineCount="12">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/scr/ChangeRequestModifyBean.java" startLineNumber="115" endLineNumber="154"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/scr/ChangeRequestDeleteBean.java" startLineNumber="152" endLineNumber="191"/>
+        </set>
+        <set lineCount="12">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/services/bom/BomLoadingHelper.java" startLineNumber="568" endLineNumber="580"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/services/bom/BomLoadingHelper.java" startLineNumber="523" endLineNumber="535"/>
+        </set>
+        <set lineCount="12">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/baseline/BaselineRTSDaoImpl.java" startLineNumber="144" endLineNumber="162"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/baseline/BaselineRTSDaoImpl.java" startLineNumber="120" endLineNumber="137"/>
+        </set>
+        <set lineCount="12">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/query/QueryConditionBean.java" startLineNumber="187" endLineNumber="203"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/query/QueryProfileBean.java" startLineNumber="164" endLineNumber="180"/>
+        </set>
+        <set lineCount="12">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/condition/NewRuleSetBean.java" startLineNumber="307" endLineNumber="320"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/condition/ChangeRuleSetBean.java" startLineNumber="313" endLineNumber="326"/>
+        </set>
+        <set lineCount="12">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/model/history/ProductLog.java" startLineNumber="57" endLineNumber="88"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/model/history/ConditionRuleLog.java" startLineNumber="152" endLineNumber="183"/>
+        </set>
+        <set lineCount="12">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/scr/RulesetInheritance.java" startLineNumber="179" endLineNumber="203"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/scr/RulesetChange.java" startLineNumber="302" endLineNumber="333"/>
+        </set>
+        <set lineCount="12">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/product/ProductTreeBeanBase.java" startLineNumber="662" endLineNumber="677"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/dt/DecisionTableBean.java" startLineNumber="172" endLineNumber="187"/>
+        </set>
+        <set lineCount="12">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/bom/DomainDaoImpl.java" startLineNumber="324" endLineNumber="337"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/bom/DomainDaoImpl.java" startLineNumber="265" endLineNumber="278"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/bom/DomainDaoImpl.java" startLineNumber="227" endLineNumber="240"/>
+        </set>
+        <set lineCount="12">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/tools/compare/IMSPolicy.java" startLineNumber="136" endLineNumber="148"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/tools/compare/IMSPolicy.java" startLineNumber="102" endLineNumber="114"/>
+        </set>
+        <set lineCount="12">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/login/ConnectionBean.java" startLineNumber="239" endLineNumber="281"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/ManagerBean.java" startLineNumber="228" endLineNumber="265"/>
+        </set>
+        <set lineCount="12">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/dao/RulesetDao.java" startLineNumber="408" endLineNumber="419"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/ProductFeature.java" startLineNumber="218" endLineNumber="229"/>
+        </set>
+        <set lineCount="12">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/query/QueryConditionBean.java" startLineNumber="176" endLineNumber="192"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/query/QueryFeatureBean.java" startLineNumber="184" endLineNumber="200"/>
+        </set>
+        <set lineCount="12">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/query/QueryProfileBean.java" startLineNumber="186" endLineNumber="202"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/query/QueryDeterminantBean.java" startLineNumber="160" endLineNumber="177"/>
+        </set>
+        <set lineCount="12">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/lock/LockDaoImpl.java" startLineNumber="196" endLineNumber="213"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/lock/LockDaoImpl.java" startLineNumber="68" endLineNumber="86"/>
+        </set>
+        <set lineCount="12">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/condition/NewRuleSetBean.java" startLineNumber="413" endLineNumber="425"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/bom/NewRulesetHelper.java" startLineNumber="280" endLineNumber="292"/>
+        </set>
+        <set lineCount="12">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/fincon/dao/FinconReportDao.java" startLineNumber="87" endLineNumber="100"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/archive/dao/ArchiveReportDao.java" startLineNumber="111" endLineNumber="124"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/cct/dao/CCTReportDao.java" startLineNumber="84" endLineNumber="97"/>
+        </set>
+        <set lineCount="12">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/model/product/Eligibility.java" startLineNumber="39" endLineNumber="75"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/model/product/Availability.java" startLineNumber="39" endLineNumber="70"/>
+        </set>
+        <set lineCount="12">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/query/QueryConditionBean.java" startLineNumber="209" endLineNumber="225"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/query/QueryProductBean.java" startLineNumber="194" endLineNumber="210"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/query/QueryFeatureBean.java" startLineNumber="218" endLineNumber="234"/>
+        </set>
+        <set lineCount="12">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/services/bom/StaticCondition.java" startLineNumber="323" endLineNumber="337"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/services/bom/StaticCondition.java" startLineNumber="287" endLineNumber="301"/>
+        </set>
+        <set lineCount="12">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/product/ProductVisibilityDaoImpl.java" startLineNumber="556" endLineNumber="573"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/product/ProductVisibilityDaoImpl.java" startLineNumber="286" endLineNumber="303"/>
+        </set>
+        <set lineCount="12">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/trigger/bom/DomainItem.java" startLineNumber="18" endLineNumber="57"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/model/bom/DomainItem.java" startLineNumber="47" endLineNumber="86"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/bom/DomainItem.java" startLineNumber="25" endLineNumber="64"/>
+        </set>
+        <set lineCount="12">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/query/QueryRulesetBean.java" startLineNumber="167" endLineNumber="183"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/query/QueryProductBean.java" startLineNumber="172" endLineNumber="188"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/query/QueryProfileBean.java" startLineNumber="175" endLineNumber="191"/>
+        </set>
+        <set lineCount="13">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/report/ReportTasksBean.java" startLineNumber="240" endLineNumber="254"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/report/ReportTasksBean.java" startLineNumber="312" endLineNumber="326"/>
+        </set>
+        <set lineCount="13">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/query/QueryRuleset.java" startLineNumber="131" endLineNumber="158"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/query/QueryCondition.java" startLineNumber="145" endLineNumber="173"/>
+        </set>
+        <set lineCount="13">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/bom/BOMDomains.java" startLineNumber="40" endLineNumber="88"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/trigger/bom/BOMDomains.java" startLineNumber="20" endLineNumber="68"/>
+        </set>
+        <set lineCount="13">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/scr/RulesetChange.java" startLineNumber="637" endLineNumber="650"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/scr/RulesetInheritance.java" startLineNumber="471" endLineNumber="484"/>
+        </set>
+        <set lineCount="13">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/transformation/IMSCommand.java" startLineNumber="86" endLineNumber="99"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/transformation/IMSCommand.java" startLineNumber="209" endLineNumber="222"/>
+        </set>
+        <set lineCount="13">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/archive/dao/ArchiveReportDao.java" startLineNumber="147" endLineNumber="161"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/archive/dao/ArchiveReportDao.java" startLineNumber="172" endLineNumber="186"/>
+        </set>
+        <set lineCount="13">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/archive/helper/RTSHelper.java" startLineNumber="131" endLineNumber="149"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/helper/RTSHelper.java" startLineNumber="658" endLineNumber="676"/>
+        </set>
+        <set lineCount="13">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/cct/util/ReportUtil.java" startLineNumber="269" endLineNumber="284"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/cct/util/ReportUtil.java" startLineNumber="352" endLineNumber="366"/>
+        </set>
+        <set lineCount="13">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/lock/LockDaoImpl.java" startLineNumber="44" endLineNumber="56"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/lock/LockDaoImpl.java" startLineNumber="127" endLineNumber="139"/>
+        </set>
+        <set lineCount="13">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/DataIntegrationServiceImpl.java" startLineNumber="75" endLineNumber="87"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/DataIntegrationServiceImpl.java" startLineNumber="182" endLineNumber="194"/>
+        </set>
+        <set lineCount="13">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/cct/report/model/ecv/ECViolationBean.java" startLineNumber="25" endLineNumber="62"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/cct/report/model/rs/RelationshipBean.java" startLineNumber="26" endLineNumber="63"/>
+        </set>
+        <set lineCount="14">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/validator/RulesetExistenceValidator.java" startLineNumber="51" endLineNumber="67"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/validator/ProductRuleExistenceValidator.java" startLineNumber="56" endLineNumber="72"/>
+        </set>
+        <set lineCount="14">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/scr/ChangeRequestDaoImpl.java" startLineNumber="52" endLineNumber="67"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/scr/ChangeRequestDaoImpl.java" startLineNumber="24" endLineNumber="38"/>
+        </set>
+        <set lineCount="14">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/tools/IMSRTSCompare.java" startLineNumber="619" endLineNumber="634"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/tools/IMSRTSCompare.java" startLineNumber="586" endLineNumber="601"/>
+        </set>
+        <set lineCount="14">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/mdb/FinconMDBDaoImpl.java" startLineNumber="90" endLineNumber="106"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/mdb/CCTMDBDaoImpl.java" startLineNumber="117" endLineNumber="135"/>
+        </set>
+        <set lineCount="14">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/LodgementControllerImpl.java" startLineNumber="331" endLineNumber="348"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/LodgementControllerImpl.java" startLineNumber="279" endLineNumber="296"/>
+        </set>
+        <set lineCount="14">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/product/ProductVisibilityDaoImpl.java" startLineNumber="509" endLineNumber="522"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/product/ProductVisibilityDaoImpl.java" startLineNumber="243" endLineNumber="256"/>
+        </set>
+        <set lineCount="14">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/log/LogDaoImplBase.java" startLineNumber="662" endLineNumber="675"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/log/LogDaoImplBase.java" startLineNumber="630" endLineNumber="643"/>
+        </set>
+        <set lineCount="14">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/rts/BaselineGeneratorImpl.java" startLineNumber="51" endLineNumber="64"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/archive/ArchiveServiceImpl.java" startLineNumber="307" endLineNumber="320"/>
+        </set>
+        <set lineCount="14">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/cct/ec/NegotiabilityViolation.java" startLineNumber="200" endLineNumber="217"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/cct/ec/NegotiabilityViolation.java" startLineNumber="145" endLineNumber="163"/>
+        </set>
+        <set lineCount="14">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/trigger/TriggerDaoImpl.java" startLineNumber="223" endLineNumber="236"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/dao/trigger/TriggerDaoImpl.java" startLineNumber="230" endLineNumber="243"/>
+        </set>
+        <set lineCount="14">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/log/LogDaoImpl.java" startLineNumber="297" endLineNumber="311"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/log/InheritInfoRowMapper.java" startLineNumber="26" endLineNumber="42"/>
+        </set>
+        <set lineCount="14">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/trigger/TriggerDaoImpl.java" startLineNumber="122" endLineNumber="137"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/dao/trigger/TriggerDaoImpl.java" startLineNumber="144" endLineNumber="160"/>
+        </set>
+        <set lineCount="15">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/ProductNegtTimeslice.java" startLineNumber="235" endLineNumber="253"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/ProductTimeSlice.java" startLineNumber="265" endLineNumber="283"/>
+        </set>
+        <set lineCount="15">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/scr/RulesetChange.java" startLineNumber="594" endLineNumber="614"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/scr/RulesetInheritance.java" startLineNumber="413" endLineNumber="436"/>
+        </set>
+        <set lineCount="15">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/ReportingDaoGetterImpl.java" startLineNumber="30" endLineNumber="45"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/ReportingDaoGetterImpl.java" startLineNumber="52" endLineNumber="67"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/ReportingDaoGetterImpl.java" startLineNumber="74" endLineNumber="89"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/ReportingDaoGetterImpl.java" startLineNumber="96" endLineNumber="112"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/ReportingDaoGetterImpl.java" startLineNumber="119" endLineNumber="135"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/ReportingDaoGetterImpl.java" startLineNumber="142" endLineNumber="157"/>
+        </set>
+        <set lineCount="15">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/transformation/dao/model/IMSSG30502.java" startLineNumber="139" endLineNumber="159"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/transformation/dao/model/IMSSG30503To17.java" startLineNumber="190" endLineNumber="210"/>
+        </set>
+        <set lineCount="15">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/scr/RulesetChange.java" startLineNumber="466" endLineNumber="480"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/scr/RulesetInheritance.java" startLineNumber="325" endLineNumber="339"/>
+        </set>
+        <set lineCount="15">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/ProductCondition.java" startLineNumber="272" endLineNumber="323"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/trigger/rule/ProductCondition.java" startLineNumber="203" endLineNumber="254"/>
+        </set>
+        <set lineCount="16">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/helper/diff/ProductEligibilityDiffHelperImpl.java" startLineNumber="57" endLineNumber="72"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/helper/diff/ProductAvailabilityDiffHelperImpl.java" startLineNumber="49" endLineNumber="64"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/helper/diff/ConditionNegotiabilityDiffHelperImpl.java" startLineNumber="67" endLineNumber="82"/>
+        </set>
+        <set lineCount="16">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/helper/RTSHelper.java" startLineNumber="574" endLineNumber="606"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/archive/helper/RTSHelper.java" startLineNumber="164" endLineNumber="190"/>
+        </set>
+        <set lineCount="16">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/trigger/TriggerDaoImpl.java" startLineNumber="310" endLineNumber="331"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/dao/trigger/TriggerDaoImpl.java" startLineNumber="314" endLineNumber="335"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/dao/ExtVarDao.java" startLineNumber="298" endLineNumber="319"/>
+        </set>
+        <set lineCount="16">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/helper/diff/ProductEligibilityDiffHelperImpl.java" startLineNumber="78" endLineNumber="96"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/helper/diff/ProductAvailabilityDiffHelperImpl.java" startLineNumber="70" endLineNumber="88"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/helper/diff/ConditionNegotiabilityDiffHelperImpl.java" startLineNumber="88" endLineNumber="106"/>
+        </set>
+        <set lineCount="16">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/bom/DomainDaoImplBase.java" startLineNumber="129" endLineNumber="146"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/trigger/TriggerDaoImpl.java" startLineNumber="309" endLineNumber="326"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/dao/trigger/TriggerDaoImpl.java" startLineNumber="313" endLineNumber="330"/>
+        </set>
+        <set lineCount="16">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/timesliceview/model/Ruleset.java" startLineNumber="79" endLineNumber="133"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/prodeletion/SimpleInheritanceLog.java" startLineNumber="44" endLineNumber="94"/>
+        </set>
+        <set lineCount="16">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/transformation/dao/model/IMSSG30503To17.java" startLineNumber="101" endLineNumber="158"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/transformation/dao/model/IMSSG30502.java" startLineNumber="74" endLineNumber="131"/>
+        </set>
+        <set lineCount="16">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/log/LogDaoImplBase.java" startLineNumber="266" endLineNumber="281"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/log/LogDaoImplBase.java" startLineNumber="188" endLineNumber="203"/>
+        </set>
+        <set lineCount="16">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/services/cct/CctServiceImpl.java" startLineNumber="405" endLineNumber="422"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/services/cct/CctServiceImpl.java" startLineNumber="345" endLineNumber="362"/>
+        </set>
+        <set lineCount="16">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/condition/NewRuleSetBean.java" startLineNumber="450" endLineNumber="468"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/bom/NewRulesetHelper.java" startLineNumber="167" endLineNumber="185"/>
+        </set>
+        <set lineCount="17">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/baseline/BaselineDaoImpl.java" startLineNumber="514" endLineNumber="543"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/baseline/BaselineDaoImpl.java" startLineNumber="562" endLineNumber="591"/>
+        </set>
+        <set lineCount="17">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/auth/AuthBean.java" startLineNumber="130" endLineNumber="155"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/lodgment/LodgmentBean.java" startLineNumber="232" endLineNumber="257"/>
+        </set>
+        <set lineCount="17">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/archive/helper/RTSHelper.java" startLineNumber="105" endLineNumber="127"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/helper/RTSHelper.java" startLineNumber="632" endLineNumber="654"/>
+        </set>
+        <set lineCount="18">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/rts/cmd/AddRulePackage.java" startLineNumber="77" endLineNumber="94"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/rts/cmd/AddRulePackage.java" startLineNumber="45" endLineNumber="62"/>
+        </set>
+        <set lineCount="18">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/bom/DomainDaoImplBase.java" startLineNumber="93" endLineNumber="110"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/bom/DomainDaoImplBase.java" startLineNumber="50" endLineNumber="67"/>
+        </set>
+        <set lineCount="18">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/transformation/dao/model/IMSSG30515.java" startLineNumber="149" endLineNumber="176"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/transformation/dao/model/IMSSG30509.java" startLineNumber="265" endLineNumber="293"/>
+        </set>
+        <set lineCount="18">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/dao/BaselineDao.java" startLineNumber="119" endLineNumber="137"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/dao/BaselineDao.java" startLineNumber="89" endLineNumber="107"/>
+        </set>
+        <set lineCount="18">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/model/lodgment/LodgmentTask.java" startLineNumber="67" endLineNumber="124"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/model/cct/CCTTask.java" startLineNumber="122" endLineNumber="178"/>
+        </set>
+        <set lineCount="18">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/query/QueryFeatureBean.java" startLineNumber="207" endLineNumber="234"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/query/QueryProductBean.java" startLineNumber="183" endLineNumber="210"/>
+        </set>
+        <set lineCount="18">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/trigger/TriggerDaoImpl.java" startLineNumber="107" endLineNumber="126"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/dao/trigger/TriggerDaoImpl.java" startLineNumber="116" endLineNumber="135"/>
+        </set>
+        <set lineCount="19">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/cct/CCTListBean.java" startLineNumber="208" endLineNumber="236"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/lodgment/LodgmentBean.java" startLineNumber="246" endLineNumber="274"/>
+        </set>
+        <set lineCount="19">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/scr/RulesetChange.java" startLineNumber="242" endLineNumber="276"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/scr/RulesetInheritance.java" startLineNumber="126" endLineNumber="156"/>
+        </set>
+        <set lineCount="20">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/trigger/bom/BOMDomains.java" startLineNumber="114" endLineNumber="184"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/bom/BOMDomains.java" startLineNumber="175" endLineNumber="231"/>
+        </set>
+        <set lineCount="20">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/trigger/rule/ColumnParseUtil.java" startLineNumber="159" endLineNumber="184"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/profile/ColumnParseUtil.java" startLineNumber="158" endLineNumber="183"/>
+        </set>
+        <set lineCount="20">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/tools/IMSRTSCompare.java" startLineNumber="485" endLineNumber="509"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/tools/IMSRTSCompare.java" startLineNumber="404" endLineNumber="428"/>
+        </set>
+        <set lineCount="20">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/condition/NewRuleSetBean.java" startLineNumber="520" endLineNumber="541"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/bom/NewRulesetHelper.java" startLineNumber="139" endLineNumber="160"/>
+        </set>
+        <set lineCount="20">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/fincon/dao/FinconDao.java" startLineNumber="94" endLineNumber="114"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/fincon/dao/FinconDao.java" startLineNumber="52" endLineNumber="72"/>
+        </set>
+        <set lineCount="21">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/condition/InheritRuleSetBean.java" startLineNumber="218" endLineNumber="241"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/condition/NewRuleSetBean.java" startLineNumber="338" endLineNumber="361"/>
+        </set>
+        <set lineCount="21">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/services/bom/BomLoadingHelperBase.java" startLineNumber="184" endLineNumber="207"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/services/bom/BomLoadingHelperBase.java" startLineNumber="237" endLineNumber="260"/>
+        </set>
+        <set lineCount="22">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/trigger/rule/TableColumnDefinition.java" startLineNumber="12" endLineNumber="82"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/profile/TableColumnDefinition.java" startLineNumber="12" endLineNumber="82"/>
+        </set>
+        <set lineCount="22">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/scr/RulesetInheritance.java" startLineNumber="384" endLineNumber="407"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/scr/RulesetChange.java" startLineNumber="566" endLineNumber="588"/>
+        </set>
+        <set lineCount="22">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/trigger/rule/ColumnParseUtil.java" startLineNumber="75" endLineNumber="121"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/profile/ColumnParseUtil.java" startLineNumber="74" endLineNumber="120"/>
+        </set>
+        <set lineCount="22">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/dao/ProductNegtDao.java" startLineNumber="158" endLineNumber="181"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/trigger/rule/RuleSetBase.java" startLineNumber="135" endLineNumber="158"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/dao/trigger/RuleSetBase.java" startLineNumber="139" endLineNumber="162"/>
+        </set>
+        <set lineCount="22">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/helper/LogHelper.java" startLineNumber="276" endLineNumber="304"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/helper/LogHelper.java" startLineNumber="350" endLineNumber="378"/>
+        </set>
+        <set lineCount="22">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/helper/LogHelper.java" startLineNumber="130" endLineNumber="158"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/helper/LogHelper.java" startLineNumber="202" endLineNumber="230"/>
+        </set>
+        <set lineCount="22">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/condition/NewRuleSetBean.java" startLineNumber="617" endLineNumber="639"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/bom/NewRulesetHelper.java" startLineNumber="102" endLineNumber="124"/>
+        </set>
+        <set lineCount="22">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/trigger/rule/ColumnParseUtil.java" startLineNumber="22" endLineNumber="68"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/profile/ColumnParseUtil.java" startLineNumber="21" endLineNumber="67"/>
+        </set>
+        <set lineCount="23">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/condition/InheritRuleSetBean.java" startLineNumber="168" endLineNumber="192"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/condition/NewRuleSetBean.java" startLineNumber="573" endLineNumber="597"/>
+        </set>
+        <set lineCount="23">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/bom/NewRulesetHelper.java" startLineNumber="62" endLineNumber="85"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/condition/NewRuleSetBean.java" startLineNumber="750" endLineNumber="773"/>
+        </set>
+        <set lineCount="24">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/archive/report/PolicyRowBean.java" startLineNumber="38" endLineNumber="130"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/cct/report/model/ecv/ECVRowBean.java" startLineNumber="35" endLineNumber="127"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/cct/report/model/ccv/CCVRowBean.java" startLineNumber="35" endLineNumber="127"/>
+        </set>
+        <set lineCount="24">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/model/product/ProductProfileRule.java" startLineNumber="42" endLineNumber="120"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/model/product/ProductConditionRule.java" startLineNumber="195" endLineNumber="273"/>
+        </set>
+        <set lineCount="24">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/trigger/BatchDao.java" startLineNumber="26" endLineNumber="66"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/dao/trigger/BatchDao.java" startLineNumber="33" endLineNumber="73"/>
+        </set>
+        <set lineCount="26">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/scr/ChangeRequestModifyBean.java" startLineNumber="69" endLineNumber="107"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/scr/ChangeRequestDeleteBean.java" startLineNumber="106" endLineNumber="144"/>
+        </set>
+        <set lineCount="28">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/trigger/TriggerDaoImpl.java" startLineNumber="188" endLineNumber="219"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/dao/trigger/TriggerDaoImpl.java" startLineNumber="196" endLineNumber="227"/>
+        </set>
+        <set lineCount="28">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/archive/dao/ArchiveReportDao.java" startLineNumber="91" endLineNumber="136"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/cct/dao/CCTReportDao.java" startLineNumber="64" endLineNumber="109"/>
+        </set>
+        <set lineCount="29">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/profile/DecisionTableUtil.java" startLineNumber="435" endLineNumber="528"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/trigger/rule/DecisionTableUtil.java" startLineNumber="450" endLineNumber="543"/>
+        </set>
+        <set lineCount="30">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/trigger/bom/Domain.java" startLineNumber="31" endLineNumber="126"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/bom/Domain.java" startLineNumber="49" endLineNumber="144"/>
+        </set>
+        <set lineCount="31">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/query/QueryProductBean.java" startLineNumber="130" endLineNumber="199"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/query/QueryRulesetBean.java" startLineNumber="126" endLineNumber="194"/>
+        </set>
+        <set lineCount="32">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/trigger/bom/Domain.java" startLineNumber="137" endLineNumber="232"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/bom/Domain.java" startLineNumber="159" endLineNumber="264"/>
+        </set>
+        <set lineCount="33">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/LodgementControllerImpl.java" startLineNumber="526" endLineNumber="579"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/TimesliceObserverImpl.java" startLineNumber="117" endLineNumber="170"/>
+        </set>
+        <set lineCount="38">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/helper/LogHelper.java" startLineNumber="321" endLineNumber="362"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/helper/LogHelper.java" startLineNumber="173" endLineNumber="214"/>
+        </set>
+        <set lineCount="39">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/helper/LogHelper.java" startLineNumber="100" endLineNumber="142"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/helper/LogHelper.java" startLineNumber="246" endLineNumber="288"/>
+        </set>
+        <set lineCount="41">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/dao/trigger/TriggerDaoImpl.java" startLineNumber="53" endLineNumber="99"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/trigger/TriggerDaoImpl.java" startLineNumber="38" endLineNumber="84"/>
+        </set>
+        <set lineCount="42">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/helper/CheckValueHelper.java" startLineNumber="190" endLineNumber="237"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/helper/CheckValueHelper.java" startLineNumber="115" endLineNumber="162"/>
+        </set>
+        <set lineCount="78">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/trigger/rule/ProductCondition.java" startLineNumber="260" endLineNumber="542"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/ProductCondition.java" startLineNumber="346" endLineNumber="628"/>
+        </set>
+        <set lineCount="92">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/trigger/rule/ProductCondition.java" startLineNumber="21" endLineNumber="189"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/ProductCondition.java" startLineNumber="33" endLineNumber="201"/>
+        </set>
+        <set lineCount="93">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/dao/trigger/TriggerDaoImpl.java" startLineNumber="284" endLineNumber="428"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/dao/trigger/TriggerDaoImpl.java" startLineNumber="280" endLineNumber="424"/>
+        </set>
+        <set lineCount="97">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/dao/trigger/RuleArtiFact.java" startLineNumber="12" endLineNumber="225"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/trigger/rule/RuleArtiFact.java" startLineNumber="12" endLineNumber="225"/>
+        </set>
+        <set lineCount="182">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/trigger/rule/DecisionTableUtil.java" startLineNumber="82" endLineNumber="433"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/profile/DecisionTableUtil.java" startLineNumber="64" endLineNumber="413"/>
+        </set>
+        <set lineCount="319">
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/di/extraction/model/dao/trigger/RuleSetBase.java" startLineNumber="35" endLineNumber="516"/>
+            <block sourceFile="/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/trigger/rule/RuleSetBase.java" startLineNumber="31" endLineNumber="512"/>
+        </set>
+        <summary duplicateFileCount="241" duplicateLineCount="10208" duplicateBlockCount="830" totalFileCount="662" totalRawLineCount="138208" totalSignificantLineCount="60994" processingTime="1173"/>
+    </check>
+</simian>

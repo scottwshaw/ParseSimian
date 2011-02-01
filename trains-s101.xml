@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<graph>
+  <node id="1" name="trains.com.thoughtworks.trains.util"/>
+  <node id="2" name="trains.com.thoughtworks.trains"/>
+  <node id="3" name="trains.com.thoughtworks.trains.domain"/>
+  <edge from="1" to="3" weight="3" flags="738197504"/>
+  <edge from="2" to="3" weight="3" flags="738197504"/>
+  <edge from="2" to="1" weight="2" flags="738197504"/>
+  <edge from="3" to="1" weight="3" flags="738197504"/>
+</graph>

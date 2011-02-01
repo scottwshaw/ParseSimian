@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<graph>
+  <node id="1" name="clojure.asm.Type"/>
+  <node id="2" name="clojure.asm.ClassReader"/>
+  <node id="3" name="clojure.asm.Label"/>
+  <node id="4" name="clojure.asm.Frame"/>
+  <node id="5" name="clojure.asm.Opcodes"/>
+  <node id="6" name="clojure.asm.Item"/>
+  <node id="7" name="clojure.asm.ClassVisitor"/>
+  <node id="8" name="clojure.asm.FieldWriter"/>
+  <node id="9" name="clojure.asm.FieldVisitor"/>
+  <node id="10" name="clojure.asm.Edge"/>
+  <node id="11" name="clojure.asm.Attribute"/>
+  <node id="12" name="clojure.asm.MethodAdapter"/>
+  <node id="13" name="clojure.asm.AnnotationWriter"/>
+  <node id="14" name="clojure.asm.ClassAdapter"/>
+  <node id="15" name="clojure.asm.ByteVector"/>
+  <node id="16" name="clojure.asm.AnnotationVisitor"/>
+  <node id="17" name="clojure.asm.MethodVisitor"/>
+  <node id="18" name="clojure.asm.Handler"/>
+  <node id="19" name="clojure.asm.ClassWriter"/>
+  <node id="20" name="clojure.asm.MethodWriter"/>
+  <edge from="2" to="19" weight="1" flags="738197512"/>
+  <edge from="2" to="6" weight="1" flags="738197512"/>
+  <edge from="2" to="15" weight="1" flags="738197512"/>
+  <edge from="2" to="7" weight="1" flags="738197512"/>
+  <edge from="2" to="11" weight="1" flags="738197512"/>
+  <edge from="2" to="17" weight="1" flags="738197512"/>
+  <edge from="2" to="5" weight="1" flags="738197512"/>
+  <edge from="2" to="9" weight="1" flags="738197512"/>
+  <edge from="2" to="20" weight="1" flags="738197512"/>
+  <edge from="2" to="3" weight="1" flags="738197512"/>
+  <edge from="2" to="16" weight="1" flags="738197512"/>
+  <edge from="2" to="1" weight="1" flags="738197512"/>
+  <edge from="3" to="20" weight="1" flags="738197512"/>
+  <edge from="3" to="15" weight="1" flags="738197512"/>
+  <edge from="3" to="4" weight="1" flags="738197516"/>
+  <edge from="3" to="10" weight="1" flags="738197516"/>
+  <edge from="4" to="3" weight="1" flags="738197516"/>
+  <edge from="4" to="19" weight="1" flags="738197512"/>
+  <edge from="4" to="20" weight="1" flags="738197512"/>
+  <edge from="4" to="6" weight="1" flags="738197512"/>
+  <edge from="4" to="1" weight="1" flags="738197512"/>
+  <edge from="7" to="16" weight="1" flags="738197512"/>
+  <edge from="7" to="11" weight="1" flags="738197512"/>
+  <edge from="7" to="9" weight="1" flags="738197512"/>
+  <edge from="7" to="17" weight="1" flags="738197512"/>
+  <edge from="8" to="9" weight="1" flags="738197506"/>
+  <edge from="8" to="19" weight="1" flags="738197516"/>
+  <edge from="8" to="6" weight="1" flags="738197512"/>
+  <edge from="8" to="16" weight="1" flags="738197512"/>
+  <edge from="8" to="15" weight="1" flags="738197512"/>
+  <edge from="8" to="13" weight="1" flags="738197516"/>
+  <edge from="8" to="11" weight="1" flags="738197516"/>
+  <edge from="9" to="16" weight="1" flags="738197512"/>
+  <edge from="9" to="11" weight="1" flags="738197512"/>
+  <edge from="10" to="3" weight="1" flags="738197516"/>
+  <edge from="11" to="3" weight="1" flags="738197512"/>
+  <edge from="11" to="2" weight="1" flags="738197512"/>
+  <edge from="11" to="15" weight="1" flags="738197512"/>
+  <edge from="11" to="19" weight="1" flags="738197512"/>
+  <edge from="12" to="17" weight="1" flags="738197518"/>
+  <edge from="12" to="16" weight="1" flags="738197512"/>
+  <edge from="12" to="11" weight="1" flags="738197512"/>
+  <edge from="12" to="3" weight="1" flags="738197512"/>
+  <edge from="13" to="16" weight="1" flags="738197514"/>
+  <edge from="13" to="19" weight="1" flags="738197516"/>
+  <edge from="13" to="15" weight="1" flags="738197516"/>
+  <edge from="13" to="1" weight="1" flags="738197512"/>
+  <edge from="13" to="6" weight="1" flags="738197512"/>
+  <edge from="14" to="7" weight="1" flags="738197518"/>
+  <edge from="14" to="16" weight="1" flags="738197512"/>
+  <edge from="14" to="11" weight="1" flags="738197512"/>
+  <edge from="14" to="9" weight="1" flags="738197512"/>
+  <edge from="14" to="17" weight="1" flags="738197512"/>
+  <edge from="17" to="16" weight="1" flags="738197512"/>
+  <edge from="17" to="11" weight="1" flags="738197512"/>
+  <edge from="17" to="3" weight="1" flags="738197512"/>
+  <edge from="18" to="3" weight="1" flags="738197516"/>
+  <edge from="19" to="7" weight="1" flags="738197514"/>
+  <edge from="19" to="6" weight="1" flags="738197516"/>
+  <edge from="19" to="15" weight="1" flags="738197516"/>
+  <edge from="19" to="2" weight="1" flags="738197516"/>
+  <edge from="19" to="16" weight="1" flags="738197512"/>
+  <edge from="19" to="13" weight="1" flags="738197516"/>
+  <edge from="19" to="11" weight="1" flags="738197516"/>
+  <edge from="19" to="9" weight="1" flags="738197512"/>
+  <edge from="19" to="8" weight="1" flags="738197516"/>
+  <edge from="19" to="17" weight="1" flags="738197512"/>
+  <edge from="19" to="20" weight="1" flags="738197516"/>
+  <edge from="19" to="1" weight="1" flags="738197512"/>
+  <edge from="20" to="17" weight="1" flags="738197506"/>
+  <edge from="20" to="19" weight="1" flags="738197516"/>
+  <edge from="20" to="3" weight="1" flags="738197516"/>
+  <edge from="20" to="15" weight="1" flags="738197516"/>
+  <edge from="20" to="16" weight="1" flags="738197512"/>
+  <edge from="20" to="13" weight="1" flags="738197516"/>
+  <edge from="20" to="1" weight="1" flags="738197512"/>
+  <edge from="20" to="11" weight="1" flags="738197516"/>
+  <edge from="20" to="4" weight="1" flags="738197512"/>
+  <edge from="20" to="6" weight="1" flags="738197512"/>
+  <edge from="20" to="18" weight="1" flags="738197516"/>
+  <edge from="20" to="10" weight="1" flags="738197512"/>
+  <edge from="20" to="2" weight="1" flags="738197512"/>
+</graph>

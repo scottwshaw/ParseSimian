@@ -45,17 +45,23 @@
     (zx/xml-> sim-zip :check :set :block assoc-class-with-linecount)))
 
 (unfinished extract-seq-of-block-linecounts)
+(unfinished extract-seq-of-relationships)
 
-(unfinished parse-simian-report)
-
-;;
-;; This function increments the hash for a single value in the vector
 (defn increment-linecount-hash [hash [clazz count]]
   (cond (contains? hash clazz) (assoc hash clazz (+ count (get hash clazz)))
 	true (assoc hash clazz count)))
 
 (defn extract-map-of-total-duplicated-lines [input]
   (reduce increment-linecount-hash '{} (partition 2 (extract-seq-of-block-linecounts input))))
+
+
+(defn parse-simian-report [input]
+  (let [linecount-map (extract-map-of-total-duplicated-lines input)
+	relationship-seq (extract-seq-of-relationships input)]
+    false))
+
+;;
+;; This function increments the hash for a single value in the vector
 
 (defn parse-and-write-graph-as-json [input-xml]
   (pprint-json (parse-simian-report input-xml)))

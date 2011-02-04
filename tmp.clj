@@ -75,6 +75,11 @@
        (zx/xml-> sim-zip :check :set :block assoc-class-with-linecount)))
 
 (def myseq [:a 1 :b 1 :b 1 :c 2 :c 2 :d 2 :d 2 :d 2])
+(def mymap {:a 1 :b 1 :c 2 :d 2})
+
+(loop [[s & r] (int seq mymap)]
+  (println s)
+  (if (not (nil? s)) (recur r)))
 
 (defn- increment-linecount-hash [hash [clazz count]]
   (cond (contains? hash clazz) (assoc hash clazz (+ count (get hash clazz)))
@@ -94,3 +99,4 @@ simple-simian-report
 
 (reduce pair-up '[] myseq)
     
+(map (fn [[source target]] {:source source :target target :value 1}) [[1 2] [3 4] [5 6]])

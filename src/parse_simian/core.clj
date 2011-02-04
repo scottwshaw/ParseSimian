@@ -1,6 +1,7 @@
 (ns parse-simian.core
   (:use clojure.contrib.json
-	[clojure.contrib.string :only [as-str]])
+	[clojure.contrib.string :only [as-str]]
+  	[clojure.walk :only [postwalk-replace]])
   (:use [midje.sweet :only [unfinished]]) ; only a dev dependency
   (:require (clojure [xml :as xml] [zip :as zip])
 	    [clojure.contrib.zip-filter.xml :as zx])
@@ -54,12 +55,19 @@
 (defn extract-map-of-total-duplicated-lines [input]
   (reduce increment-linecount-hash '{} (partition 2 (extract-seq-of-block-linecounts input))))
 
-
 (defn parse-simian-report [input]
-  (let [linecount-map (extract-map-of-total-duplicated-lines input)
+  (let [linecount-seq (seq (extract-map-of-total-duplicated-lines input))
 	relationship-seq (extract-seq-of-relationships input)]
-    false))
-
+    (loop [[[clazz lc] & restlc] linecount-seq
+	   rs relationship-seq
+	   node-counter 0
+	   node-seq []]
+      (if (nil? lc)
+	{:nodes node-seq :links (map (fn [[s t]] {:source s :target t :value 1}) rs)}
+	(recur restlc
+	       (postwalk-replace {clazz node-counter} rs)
+	       (inc node-counter)
+	       (cons {:nodename clazz :group :class :size lc} node-seq))))))
 ;;
 ;; This function increments the hash for a single value in the vector
 

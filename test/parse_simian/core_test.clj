@@ -91,5 +91,5 @@
 	second-set ["au.com.westpac.pda.beans.report.ReportTasksBean"
 		    "au.com.westpac.pda.beans.cct.CCTTasksBean"]
 	sim-zip (zip/xml-zip (xml/parse (clojure.contrib.io/input-stream (.getBytes simple-simian-report))))]
-    (fact (extract-seq-of-duplication-sets ...input-xml...) => (contains [first-set second-set])
+    (fact (extract-seq-of-duplication-sets ...input-xml...) => [second-set first-set]
 	  (provided (zipper-from-simian-input ...input-xml...) => sim-zip))))

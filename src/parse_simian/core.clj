@@ -1,7 +1,7 @@
 (ns parse-simian.core
   (:use clojure.contrib.json
 	[clojure.contrib.string :only [as-str]]
-  	[clojure.walk :only [postwalk-replace]])
+  	[clojure.walk :only [postwalk-replace postwalk]])
   (:use [midje.sweet :only [unfinished]]) ; only a dev dependency
   (:require (clojure [xml :as xml] [zip :as zip])
 	    [clojure.contrib.zip-filter.xml :as zx])
@@ -49,8 +49,8 @@
 (unfinished extract-seq-of-relationships)
 
 (defn increment-linecount-hash [hash [clazz count]]
-  (cond (contains? hash clazz) (assoc hash clazz (+ count (get hash clazz)))
-	true (assoc hash clazz count)))
+  (if (contains? hash clazz) (assoc hash clazz (+ count (get hash clazz)))
+      (assoc hash clazz count)))
 
 (defn extract-map-of-total-duplicated-lines [input]
   (reduce increment-linecount-hash '{} (partition 2 (extract-seq-of-block-linecounts input))))
@@ -68,8 +68,22 @@
 	       (postwalk-replace {clazz node-counter} rs)
 	       (inc node-counter)
 	       (cons {:nodename clazz :group :class :size lc} node-seq))))))
+
+(unfinished expand-pairs-from-set)
+(unfinished zipper-from-simian-input)
+
+(defn class-from-source-file-attr []
+  (fn [loc] (to-qualified-classname (zx/attr loc :sourceFile) path-prefix)))
+
+(defn extract-seq-of-duplication-sets [input-xml]
+  (let [sim-zip (zipper-from-simian-input input-xml)]
+    (map #(zx/xml-> % :block (class-from-source-file-attr)) (zx/xml-> sim-zip :check :set))))
+
+(defn extract-seq-of-relationships [input-xml]
+  (let [sets (extract-seq-of-duplication-sets input-xml)]
+    (mapcat expand-pairs-from-set sets)))
+
 ;;
 ;; This function increments the hash for a single value in the vector
-
 (defn parse-and-write-graph-as-json [input-xml]
   (pprint-json (parse-simian-report input-xml)))

@@ -4,7 +4,8 @@
 	[midje.sweet :only [fact unfinished]]
 	[midje.checkers :only [exactly truthy]]
   	[midje.checkers.collection :only [contains]])
-	(:require clojure.contrib.io))
+  (:require clojure.contrib.io)
+  (:require (clojure [xml :as xml] [zip :as zip])))
 
 (deftest shouldPrintJSONSymbolsWithoutQuotes
   (fact (json-str {:a :b, :c :d}) => "{a:\"b\",c:\"d\"}"))
@@ -30,7 +31,7 @@
 	(provided
 	 (parse-simian-report ...input-xml...) => simple-simian-graph)))
 
-(deftest should-parse-input-xml-and-produce-json
+(deftest should-parse-input-xml-and-produce-a-graph-structure
   (fact (parse-simian-report ...input-xml...) => simple-simian-graph
 	(provided (extract-map-of-total-duplicated-lines ...input-xml...) =>
 		  {"au.com.westpac.pda.lodge.rebuid.SystemRebuilderImpl" 7
@@ -60,3 +61,35 @@
   (fact (extract-map-of-total-duplicated-lines ...input-xml...) => (contains {})
 	(provided (extract-seq-of-block-linecounts ...input-xml...) => [])))
 
+(deftest should-extract-seq-of-file-pairs-within-sets
+  (let [seq-of-relationships [["au.com.westpac.pda.lodge.LodgementUtilities" "au.com.westpac.pda.lodge.rebuid.SystemRebuilderImpl"]
+			      ["au.com.westpac.pda.lodge.LodgementUtilities" "au.com.westpac.pda.beans.report.ReportTasksBean"]
+			      ["au.com.westpac.pda.lodge.rebuid.SystemRebuilderImpl" "au.com.westpac.pda.beans.report.ReportTasksBean"]
+			      ["au.com.westpac.pda.beans.report.ReportTasksBean" "au.com.westpac.pda.beans.cct.CCTTasksBean"]]
+	first-set ["au.com.westpac.pda.lodge.LodgementUtilities"
+		   "au.com.westpac.pda.lodge.rebuid.SystemRebuilderImpl"
+		   "au.com.westpac.pda.beans.report.ReportTasksBean"]
+	second-set ["au.com.westpac.pda.beans.report.ReportTasksBean"
+		    "au.com.westpac.pda.beans.cct.CCTTasksBean"]
+	first-seq-of-pairs [["au.com.westpac.pda.lodge.LodgementUtilities"
+			     "au.com.westpac.pda.lodge.rebuid.SystemRebuilderImpl"]
+			    ["au.com.westpac.pda.lodge.LodgementUtilities"
+			     "au.com.westpac.pda.beans.report.ReportTasksBean"]
+			    ["au.com.westpac.pda.lodge.rebuid.SystemRebuilderImpl"
+			     "au.com.westpac.pda.beans.report.ReportTasksBean"]]
+	second-seq-of-pairs[["au.com.westpac.pda.beans.report.ReportTasksBean"
+			     "au.com.westpac.pda.beans.cct.CCTTasksBean"]]]
+    (fact (extract-seq-of-relationships ...input-xml...) => seq-of-relationships
+	  (provided (extract-seq-of-duplication-sets ...input-xml...) => [first-set second-set]
+		    (expand-pairs-from-set first-set) => first-seq-of-pairs
+		    (expand-pairs-from-set second-set) => second-seq-of-pairs))))
+
+(deftest should-extract-seq-of-sets-from-zip
+  (let [first-set ["au.com.westpac.pda.lodge.LodgementUtilities"
+		   "au.com.westpac.pda.lodge.rebuid.SystemRebuilderImpl"
+		   "au.com.westpac.pda.beans.report.ReportTasksBean"]
+	second-set ["au.com.westpac.pda.beans.report.ReportTasksBean"
+		    "au.com.westpac.pda.beans.cct.CCTTasksBean"]
+	sim-zip (zip/xml-zip (xml/parse (clojure.contrib.io/input-stream (.getBytes simple-simian-report))))]
+    (fact (extract-seq-of-duplication-sets ...input-xml...) => (contains [first-set second-set])
+	  (provided (zipper-from-simian-input ...input-xml...) => sim-zip))))

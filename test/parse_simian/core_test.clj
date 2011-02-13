@@ -25,12 +25,6 @@
 	 "Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/cct/CCTTasksBean.java"
 	 "Users/avombatk/projects/healthcheck/build/src/") => "au.com.westpac.pda.beans.cct.CCTTasksBean"))
 
-(deftest shouldGenerateSimpleHtmlProtovizFile
-  (fact "writer writes without error"
-	(parse-and-write-graph-as-json ...input-xml...) => nil?
-	(provided
-	 (parse-simian-report ...input-xml...) => simple-simian-graph)))
-
 (deftest should-parse-input-xml-and-produce-a-graph-structure
   (fact (parse-simian-report ...input-xml...) => simple-simian-graph
 	(provided (extract-map-of-total-duplicated-lines ...input-xml...) =>

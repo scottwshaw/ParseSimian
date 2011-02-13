@@ -5,7 +5,8 @@
 	[midje.checkers :only [exactly truthy]]
   	[midje.checkers.collection :only [contains]])
   (:require clojure.contrib.io)
-  (:require (clojure [xml :as xml] [zip :as zip])))
+  (:require (clojure [xml :as xml] [zip :as zip])
+	    [clojure.contrib.zip-filter.xml :as zx]))
 
 (deftest shouldPrintJSONSymbolsWithoutQuotes
   (fact (json-str {:a :b, :c :d}) => "{a:\"b\",c:\"d\"}"))
@@ -86,4 +87,11 @@
 		    "au.com.westpac.pda.beans.cct.CCTTasksBean"]
 	sim-zip (zip/xml-zip (xml/parse (clojure.contrib.io/input-stream (.getBytes simple-simian-report))))]
     (fact (extract-seq-of-duplication-sets ...input-xml...) => [second-set first-set]
-	  (provided (zipper-from-simian-input ...input-xml...) => sim-zip))))
+	  (provided (zipper-from-xml-input ...input-xml...) => sim-zip))))
+
+
+(deftest should-extract-zip-from-string
+  (let [myxml "<root><child>firstchild</child><child>secondchild</child></root>"
+	myzip (zipper-from-xml-input myxml)]
+    (fact (zx/xml-> myzip :root :child) => ["firstchild" "secondchild"])))
+   

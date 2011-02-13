@@ -55,8 +55,6 @@
 
 (require '[clojure.contrib.io :only [input-stream]])
 
-(def sim-zip (with-in-str simple-simian-report (zip/xml-zip (xml/parse *in*))))
-
 (zip/xml-zip (xml/parse (clojure.contrib.io/input-stream (.getBytes simple-simian-report))))
 
 (let [sim-zip (zip/xml-zip (xml/parse (clojure.contrib.io/input-stream (.getBytes simple-simian-report))))]
@@ -77,7 +75,7 @@
   (fn [loc] (toClassname (zx/attr loc :sourceFile))))
 
 (let [sim-zip (zip/xml-zip (xml/parse (clojure.contrib.io/input-stream (.getBytes simple-simian-report))))]
-  (map #(zx/xml-> % :block class-from-source-file-attr) (zx/xml-> sim-zip :check :set)))
+  (map #(zx/xml-> % :block (class-from-source-file-attr)) (zx/xml-> sim-zip :check :set)))
 
 
 (def myseq [:a 1 :b 1 :b 1 :c 2 :c 2 :d 2 :d 2 :d 2])
@@ -110,3 +108,5 @@ simple-simian-report
 (def sim-zip [{:tag :simian, :attrs {:version "2.2.24"}, :content [{:tag :check, :attrs {:ignoreCharacterCase "true", :ignoreCurlyBraces "true", :ignoreIdentifierCase "true", :ignoreModifiers "true", :ignoreStringCase "true", :threshold "6"}, :content [{:tag :set, :attrs {:lineCount "6"}, :content [{:tag :block, :attrs {:sourceFile "/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/report/ReportTasksBean.java", :startLineNumber "333", :endLineNumber "340"}, :content nil} {:tag :block, :attrs {:sourceFile "/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/cct/CCTTasksBean.java", :startLineNumber "187", :endLineNumber "194"}, :content nil}]} {:tag :set, :attrs {:lineCount "7"}, :content [{:tag :block, :attrs {:sourceFile "/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/LodgementUtilities.java", :startLineNumber "175", :endLineNumber "182"}, :content nil} {:tag :block, :attrs {:sourceFile "/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/rebuid/SystemRebuilderImpl.java", :startLineNumber "199", :endLineNumber "206"}, :content nil} {:tag :block, :attrs {:sourceFile "/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/report/ReportTasksBean.java", :startLineNumber "333", :endLineNumber "340"}, :content nil}]} {:tag :summary, :attrs {:duplicateFileCount "241", :duplicateLineCount "10208", :duplicateBlockCount "830", :totalFileCount "662", :totalRawLineCount "138208", :totalSignificantLineCount "60994", :processingTime "1173"}, :content nil}]}]} nil])
 
 (zx/xml-> sim-zip :check :set :block assoc-class-with-linecount-1)
+
+(seq [:a :b :c])

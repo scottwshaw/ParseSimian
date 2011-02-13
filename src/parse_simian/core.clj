@@ -1,7 +1,8 @@
 (ns parse-simian.core
   (:use clojure.contrib.json
 	[clojure.contrib.string :only [as-str]]
-  	[clojure.walk :only [postwalk-replace postwalk]])
+  	[clojure.walk :only [postwalk-replace postwalk]]
+	[clojure.contrib.io :only [input-stream]])
   (:use [midje.sweet :only [unfinished]]) ; only a dev dependency
   (:require (clojure [xml :as xml] [zip :as zip])
 	    [clojure.contrib.zip-filter.xml :as zx])
@@ -70,13 +71,16 @@
 	       (cons {:nodename clazz :group :class :size lc} node-seq))))))
 
 (unfinished expand-pairs-from-set)
-(unfinished zipper-from-simian-input)
+(unfinished zipper-from-xml-input)
+
+(defn zipper-from-xml-input [input-xml]
+  (zip/xml-zip (xml/parse (clojure.contrib.io/input-stream (.getBytes input-xml)))))
 
 (defn class-from-source-file-attr []
   (fn [loc] (to-qualified-classname (zx/attr loc :sourceFile) path-prefix)))
 
 (defn extract-seq-of-duplication-sets [input-xml]
-  (let [sim-zip (zipper-from-simian-input input-xml)]
+  (let [sim-zip (zipper-from-xml-input input-xml)]
     (map #(zx/xml-> % :block (class-from-source-file-attr)) (zx/xml-> sim-zip :check :set))))
 
 (defn extract-seq-of-relationships [input-xml]

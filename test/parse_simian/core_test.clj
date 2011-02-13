@@ -89,9 +89,8 @@
     (fact (extract-seq-of-duplication-sets ...input-xml...) => [second-set first-set]
 	  (provided (zipper-from-xml-input ...input-xml...) => sim-zip))))
 
-
 (deftest should-extract-zip-from-string
-  (let [myxml "<root><child>firstchild</child><child>secondchild</child></root>"
+  (let [myxml "<root><parent><child>firstchild</child><child>secondchild</child></parent></root>"
 	myzip (zipper-from-xml-input myxml)]
-    (fact (zx/xml-> myzip :root :child) => ["firstchild" "secondchild"])))
+    (fact (zx/xml-> myzip :parent :child zx/text) => ["firstchild" "secondchild"])))
    

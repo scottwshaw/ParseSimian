@@ -47,7 +47,6 @@
     (zx/xml-> sim-zip :check :set :block assoc-class-with-linecount)))
 
 (unfinished extract-seq-of-block-linecounts)
-(unfinished extract-seq-of-relationships)
 
 (defn increment-linecount-hash [hash [clazz count]]
   (if (contains? hash clazz) (assoc hash clazz (+ count (get hash clazz)))

@@ -3,7 +3,7 @@
   (:use	clojure.contrib.json clojure.test (incanter core stats charts)
 	[midje.sweet :only [fact unfinished]]
 	[midje.checkers :only [exactly truthy]]
-  	[midje.checkers.collection :only [contains]])
+  	[midje.checkers.collection :only [contains just]])
   (:require clojure.contrib.io)
   (:require (clojure [xml :as xml] [zip :as zip])
 	    [clojure.contrib.zip-filter.xml :as zx]))
@@ -57,10 +57,11 @@
 	(provided (extract-seq-of-block-linecounts ...input-xml...) => [])))
 
 (deftest should-extract-seq-of-file-pairs-within-sets
-  (let [seq-of-relationships [["au.com.westpac.pda.lodge.LodgementUtilities" "au.com.westpac.pda.lodge.rebuid.SystemRebuilderImpl"]
-			      ["au.com.westpac.pda.lodge.LodgementUtilities" "au.com.westpac.pda.beans.report.ReportTasksBean"]
-			      ["au.com.westpac.pda.lodge.rebuid.SystemRebuilderImpl" "au.com.westpac.pda.beans.report.ReportTasksBean"]
-			      ["au.com.westpac.pda.beans.report.ReportTasksBean" "au.com.westpac.pda.beans.cct.CCTTasksBean"]]
+  (let [seq-of-relationships
+	[["au.com.westpac.pda.lodge.LodgementUtilities" "au.com.westpac.pda.lodge.rebuid.SystemRebuilderImpl"]
+	 ["au.com.westpac.pda.lodge.LodgementUtilities" "au.com.westpac.pda.beans.report.ReportTasksBean"]
+	 ["au.com.westpac.pda.lodge.rebuid.SystemRebuilderImpl" "au.com.westpac.pda.beans.report.ReportTasksBean"]
+	 ["au.com.westpac.pda.beans.report.ReportTasksBean" "au.com.westpac.pda.beans.cct.CCTTasksBean"]]
 	first-set ["au.com.westpac.pda.lodge.LodgementUtilities"
 		   "au.com.westpac.pda.lodge.rebuid.SystemRebuilderImpl"
 		   "au.com.westpac.pda.beans.report.ReportTasksBean"]
@@ -79,6 +80,25 @@
 		    (expand-pairs-from-set first-set) => first-seq-of-pairs
 		    (expand-pairs-from-set second-set) => second-seq-of-pairs))))
 
+(deftest should-expand-duplication-sets-pairwise
+  (let [first-set ["au.com.westpac.pda.lodge.LodgementUtilities"
+		   "au.com.westpac.pda.lodge.rebuid.SystemRebuilderImpl"
+		   "au.com.westpac.pda.beans.report.ReportTasksBean"]
+	second-set ["au.com.westpac.pda.beans.report.ReportTasksBean"
+		    "au.com.westpac.pda.beans.cct.CCTTasksBean"]
+	first-seq-of-pairs [["au.com.westpac.pda.lodge.LodgementUtilities"
+			     "au.com.westpac.pda.lodge.rebuid.SystemRebuilderImpl"]
+			    ["au.com.westpac.pda.lodge.LodgementUtilities"
+			     "au.com.westpac.pda.beans.report.ReportTasksBean"]
+			    ["au.com.westpac.pda.lodge.rebuid.SystemRebuilderImpl"
+			     "au.com.westpac.pda.beans.report.ReportTasksBean"]]
+	second-seq-of-pairs [["au.com.westpac.pda.beans.report.ReportTasksBean"
+			      "au.com.westpac.pda.beans.cct.CCTTasksBean"]]]
+    
+    (fact (expand-pairs-from-set [:a :b :c :d]) => (just [[:a :b] [:a :c] [:a :d] [:b :c] [:b :d] [:c :d]] :in-any-order))
+    (fact (expand-pairs-from-set first-set) => (just first-seq-of-pairs :in-any-order))
+    (fact (expand-pairs-from-set second-set) => (just second-seq-of-pairs :in-any-order))))
+
 (deftest should-extract-seq-of-sets-from-zip
   (let [first-set ["au.com.westpac.pda.lodge.LodgementUtilities"
 		   "au.com.westpac.pda.lodge.rebuid.SystemRebuilderImpl"
@@ -86,11 +106,13 @@
 	second-set ["au.com.westpac.pda.beans.report.ReportTasksBean"
 		    "au.com.westpac.pda.beans.cct.CCTTasksBean"]
 	sim-zip (zip/xml-zip (xml/parse (clojure.contrib.io/input-stream (.getBytes simple-simian-report))))]
-    (fact (extract-seq-of-duplication-sets ...input-xml...) => [second-set first-set]
+    (fact (extract-seq-of-duplication-sets ...input-xml...) => (just [first-set second-set] :in-any-order)
 	  (provided (zipper-from-xml-input ...input-xml...) => sim-zip))))
 
 (deftest should-extract-zip-from-string
   (let [myxml "<root><parent><child>firstchild</child><child>secondchild</child></parent></root>"
 	myzip (zipper-from-xml-input myxml)]
     (fact (zx/xml-> myzip :parent :child zx/text) => ["firstchild" "secondchild"])))
+
+
    

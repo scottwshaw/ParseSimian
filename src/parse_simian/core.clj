@@ -5,8 +5,8 @@
 	[clojure.contrib.io :only [input-stream]])
   (:use [midje.sweet :only [unfinished]]) ; only a dev dependency
   (:require (clojure [xml :as xml] [zip :as zip])
-	    [clojure.contrib.zip-filter.xml :as zx])
-  (:require [clojure.contrib.str-utils2 :as str])
+	    [clojure.contrib.zip-filter.xml :as zx]
+	    [clojure.contrib.str-utils2 :as str])
   (:import (java.io PrintWriter PushbackReader StringWriter StringReader Reader EOFException)))
 
 ;; Hack to get clojure.contrib.json to write arrays without the quotes around keys
@@ -70,9 +70,14 @@
 	       (inc node-counter)
 	       (cons {:nodename clazz :group :class :size lc} node-seq))))))
 
-(unfinished expand-pairs-from-set)
-(unfinished zipper-from-xml-input)
-
+(defn expand-pairs-from-set [seq-of-classes]
+  (loop [[first-class & rest-classes] seq-of-classes
+	 seq-of-pairs []]
+    (if (nil? rest-classes)
+      seq-of-pairs
+      (recur rest-classes
+	     (reduce (fn [pair-seq-inner next-item] (cons [first-class next-item] pair-seq-inner))
+		     seq-of-pairs rest-classes)))))
 (defn zipper-from-xml-input [input-xml]
   (zip/xml-zip (xml/parse (clojure.contrib.io/input-stream (.getBytes input-xml)))))
 
@@ -87,7 +92,5 @@
   (let [sets (extract-seq-of-duplication-sets input-xml)]
     (mapcat expand-pairs-from-set sets)))
 
-;;
-;; This function increments the hash for a single value in the vector
-(defn parse-and-write-graph-as-json [input-xml]
-  (pprint-json (parse-simian-report input-xml)))
+
+

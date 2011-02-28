@@ -48,6 +48,29 @@
 
 (unfinished extract-seq-of-block-linecounts)
 
+(defn expand-pairs-from-set [seq-of-classes]
+  (loop [[first-class & rest-classes] seq-of-classes
+	 seq-of-pairs []]
+    (if (nil? rest-classes)
+      seq-of-pairs
+      (recur rest-classes
+	     (reduce (fn [pair-seq-inner next-item] (cons [first-class next-item] pair-seq-inner))
+		     seq-of-pairs rest-classes)))))
+
+(defn zipper-from-xml-input [input-xml]
+  (zip/xml-zip (xml/parse (clojure.contrib.io/input-stream (.getBytes input-xml)))))
+
+(defn class-from-source-file-attr []
+  (fn [loc] (to-qualified-classname (zx/attr loc :sourceFile) path-prefix)))
+
+(defn extract-seq-of-duplication-sets [input-xml]
+  (let [sim-zip (zipper-from-xml-input input-xml)]
+    (map #(zx/xml-> % :block (class-from-source-file-attr)) (zx/xml-> sim-zip :check :set))))
+
+(defn extract-seq-of-relationships [input-xml]
+  (let [sets (extract-seq-of-duplication-sets input-xml)]
+    (mapcat expand-pairs-from-set sets)))
+
 (defn increment-linecount-hash [hash [clazz count]]
   (if (contains? hash clazz) (assoc hash clazz (+ count (get hash clazz)))
       (assoc hash clazz count)))
@@ -69,27 +92,7 @@
 	       (inc node-counter)
 	       (cons {:nodename clazz :group :class :size lc} node-seq))))))
 
-(defn expand-pairs-from-set [seq-of-classes]
-  (loop [[first-class & rest-classes] seq-of-classes
-	 seq-of-pairs []]
-    (if (nil? rest-classes)
-      seq-of-pairs
-      (recur rest-classes
-	     (reduce (fn [pair-seq-inner next-item] (cons [first-class next-item] pair-seq-inner))
-		     seq-of-pairs rest-classes)))))
-(defn zipper-from-xml-input [input-xml]
-  (zip/xml-zip (xml/parse (clojure.contrib.io/input-stream (.getBytes input-xml)))))
 
-(defn class-from-source-file-attr []
-  (fn [loc] (to-qualified-classname (zx/attr loc :sourceFile) path-prefix)))
-
-(defn extract-seq-of-duplication-sets [input-xml]
-  (let [sim-zip (zipper-from-xml-input input-xml)]
-    (map #(zx/xml-> % :block (class-from-source-file-attr)) (zx/xml-> sim-zip :check :set))))
-
-(defn extract-seq-of-relationships [input-xml]
-  (let [sets (extract-seq-of-duplication-sets input-xml)]
-    (mapcat expand-pairs-from-set sets)))
 
 
 

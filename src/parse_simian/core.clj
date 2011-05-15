@@ -38,15 +38,16 @@
 
 (def path-prefix "/Users/avombatk/projects/healthcheck/build/src/")
 
+(defn zipper-from-xml-input [input-xml]
+  (zip/xml-zip (xml/parse (clojure.contrib.io/input-stream (.getBytes input-xml)))))
+
 (defn assoc-class-with-linecount [loc]
   [(to-qualified-classname (zx/attr loc :sourceFile) path-prefix) (Integer. (zx/attr (zip/up loc) :lineCount))])
 
 ;; Takes a filename or input-stream
-(defn extract-seq-of-block-linecounts-untested [input]
-  (let [sim-zip (zip/xml-zip (xml/parse input))]
+(defn extract-seq-of-block-linecounts [input]
+  (let [sim-zip (zipper-from-xml-input input)]
     (zx/xml-> sim-zip :check :set :block assoc-class-with-linecount)))
-
-(unfinished extract-seq-of-block-linecounts)
 
 (defn expand-pairs-from-set [seq-of-classes]
   (loop [[first-class & rest-classes] seq-of-classes
@@ -56,9 +57,6 @@
       (recur rest-classes
 	     (reduce (fn [pair-seq-inner next-item] (cons [first-class next-item] pair-seq-inner))
 		     seq-of-pairs rest-classes)))))
-
-(defn zipper-from-xml-input [input-xml]
-  (zip/xml-zip (xml/parse (clojure.contrib.io/input-stream (.getBytes input-xml)))))
 
 (defn class-from-source-file-attr []
   (fn [loc] (to-qualified-classname (zx/attr loc :sourceFile) path-prefix)))

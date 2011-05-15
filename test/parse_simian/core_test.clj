@@ -46,6 +46,14 @@
 
 (deftest should-sum-linecount-entry-for-existing-pair-in-longer-hash
   (fact (increment-linecount-hash '{"myclass" 3 "myclass2" 3 "myclass3" 3} ["myclass" 6]) => (contains {"myclass" 9})))
+
+(deftest should-extract-seq-of-block-linecounts-from-example-doc
+  (fact (extract-seq-of-block-linecounts simple-simian-report) =>
+	["au.com.westpac.pda.beans.report.ReportTasksBean" 6
+	 "au.com.westpac.pda.beans.cct.CCTTasksBean" 6
+	 "au.com.westpac.pda.lodge.LodgementUtilities" 7
+	 "au.com.westpac.pda.lodge.rebuid.SystemRebuilderImpl" 7
+	 "au.com.westpac.pda.beans.report.ReportTasksBean" 7]))
 				    
 (deftest should-extract-map-of-total-duplicated-lines
   (fact (extract-map-of-total-duplicated-lines ...input-xml...) => (contains {:a 1 :b 2 :c 4 :d 6})

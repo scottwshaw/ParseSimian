@@ -1,15 +1,14 @@
 (ns parse-simian.core-test
   (:use :reload parse-simian.core)
   (:use	clojure.test (incanter core stats charts)
-	[midje.sweet :only [fact provided]]
+	[midje.sweet :only [fact]]
 	[midje.util.checkers :only [map-containing exactly truthy]]))
 
 
 (use 'clojure.contrib.string)
 (import (java.io PrintWriter PushbackReader StringWriter
-                    StringReader Reader EOFException))
+                    StringReader Reader EOFException BufferedReader))
 (use 'clojure.contrib.json)
-
 (defn- write-json-object-without-quotes [m #^PrintWriter out]
   (.print out \{)
   (loop [x m]
@@ -110,3 +109,13 @@ simple-simian-report
 (zx/xml-> sim-zip :check :set :block assoc-class-with-linecount-1)
 
 (seq [:a :b :c])
+
+(json-str (parse-simian-report simple-simian-report))
+
+(use 'clojure.contrib.repl-utils)
+(clojure.contrib.repl-utils/show (clojure.contrib.io/reader "simian_report.xml"))
+
+(.readLine (clojure.contrib.io/reader "simian_report.xml"))
+
+(clojure.contrib.repl-utils/show (clojure.contrib.io/input-stream "simian_report.xml"))
+

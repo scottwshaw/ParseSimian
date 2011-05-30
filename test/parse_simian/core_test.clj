@@ -11,7 +11,9 @@
 (deftest shouldPrintJSONSymbolsWithoutQuotes
   (fact (json-str {:a :b, :c :d}) => "{a:\"b\",c:\"d\"}"))
 
-(def simple-simian-report "<?xml version=\"1.0\" encoding=\"UTF-8\"?><?xml-stylesheet href=\"simian.xsl\" type=\"text/xsl\"?><!--Similarity Analyser 2.2.24 - http://www.redhillconsulting.com.au/products/simian/index.htmlCopyright (c) 2003-08 RedHill Consulting Pty. Ltd.  All rights reserved.Simian is not free unless used solely for non-commercial or evaluation purposes.--><simian version=\"2.2.24\">    <check ignoreCharacterCase=\"true\" ignoreCurlyBraces=\"true\" ignoreIdentifierCase=\"true\" ignoreModifiers=\"true\" ignoreStringCase=\"true\" threshold=\"6\">        <set lineCount=\"6\">            <block sourceFile=\"/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/report/ReportTasksBean.java\" startLineNumber=\"333\" endLineNumber=\"340\"/>            <block sourceFile=\"/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/cct/CCTTasksBean.java\" startLineNumber=\"187\" endLineNumber=\"194\"/>        </set> <set lineCount=\"7\"> <block sourceFile=\"/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/LodgementUtilities.java\" startLineNumber=\"175\" endLineNumber=\"182\"/>            <block sourceFile=\"/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/rebuid/SystemRebuilderImpl.java\" startLineNumber=\"199\" endLineNumber=\"206\"/>    <block sourceFile=\"/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/report/ReportTasksBean.java\" startLineNumber=\"333\" endLineNumber=\"340\"/>    </set><summary duplicateFileCount=\"241\" duplicateLineCount=\"10208\" duplicateBlockCount=\"830\" totalFileCount=\"662\" totalRawLineCount=\"138208\" totalSignificantLineCount=\"60994\" processingTime=\"1173\"/>     </check></simian>")
+(defn- simple-simian-report-stream []
+  (clojure.contrib.io/input-stream (.getBytes  "<?xml version=\"1.0\" encoding=\"UTF-8\"?><?xml-stylesheet href=\"simian.xsl\" type=\"text/xsl\"?><!--Similarity Analyser 2.2.24 - http://www.redhillconsulting.com.au/products/simian/index.htmlCopyright (c) 2003-08 RedHill Consulting Pty. Ltd.  All rights reserved.Simian is not free unless used solely for non-commercial or evaluation purposes.--><simian version=\"2.2.24\">    <check ignoreCharacterCase=\"true\" ignoreCurlyBraces=\"true\" ignoreIdentifierCase=\"true\" ignoreModifiers=\"true\" ignoreStringCase=\"true\" threshold=\"6\">        <set lineCount=\"6\">            <block sourceFile=\"/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/report/ReportTasksBean.java\" startLineNumber=\"333\" endLineNumber=\"340\"/>            <block sourceFile=\"/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/cct/CCTTasksBean.java\" startLineNumber=\"187\" endLineNumber=\"194\"/>        </set> <set lineCount=\"7\"> <block sourceFile=\"/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/LodgementUtilities.java\" startLineNumber=\"175\" endLineNumber=\"182\"/>            <block sourceFile=\"/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/rebuid/SystemRebuilderImpl.java\" startLineNumber=\"199\" endLineNumber=\"206\"/>    <block sourceFile=\"/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/report/ReportTasksBean.java\" startLineNumber=\"333\" endLineNumber=\"340\"/>    </set><summary duplicateFileCount=\"241\" duplicateLineCount=\"10208\" duplicateBlockCount=\"830\" totalFileCount=\"662\" totalRawLineCount=\"138208\" totalSignificantLineCount=\"60994\" processingTime=\"1173\"/>     </check></simian>")))
+
 
 (def simple-simian-graph {:nodes [{:nodename "au.com.westpac.pda.beans.report.ReportTasksBean" :group :class :size 13}
 				  {:nodename "au.com.westpac.pda.beans.cct.CCTTasksBean" :group :class :size 6}
@@ -38,6 +40,18 @@
 		   ["au.com.westpac.pda.lodge.LodgementUtilities" "au.com.westpac.pda.beans.report.ReportTasksBean"]
 		   ["au.com.westpac.pda.beans.report.ReportTasksBean" "au.com.westpac.pda.beans.cct.CCTTasksBean"]])))
 
+(deftest should-parse-input-xml-file-and-produce-a-graph-structure
+  (fact (parse-simian-report ...input-xml...) => simple-simian-graph
+	(provided (extract-map-of-total-duplicated-lines ...input-xml...) =>
+		  {"au.com.westpac.pda.lodge.rebuid.SystemRebuilderImpl" 7
+		   "au.com.westpac.pda.lodge.LodgementUtilities" 7
+		   "au.com.westpac.pda.beans.cct.CCTTasksBean" 6
+		   "au.com.westpac.pda.beans.report.ReportTasksBean" 13}
+		  (extract-seq-of-relationships ...input-xml...) =>
+		  [["au.com.westpac.pda.lodge.LodgementUtilities" "au.com.westpac.pda.lodge.rebuid.SystemRebuilderImpl"]
+		   ["au.com.westpac.pda.lodge.LodgementUtilities" "au.com.westpac.pda.beans.report.ReportTasksBean"]
+		   ["au.com.westpac.pda.beans.report.ReportTasksBean" "au.com.westpac.pda.beans.cct.CCTTasksBean"]])))
+
 (deftest should-create-new-linecount-entry-for-single-pair
   (fact (increment-linecount-hash '{} ["myclass" 6]) => (contains {"myclass" 6})))
 
@@ -48,7 +62,7 @@
   (fact (increment-linecount-hash '{"myclass" 3 "myclass2" 3 "myclass3" 3} ["myclass" 6]) => (contains {"myclass" 9})))
 
 (deftest should-extract-seq-of-block-linecounts-from-example-doc
-  (fact (extract-seq-of-block-linecounts simple-simian-report) =>
+  (fact (extract-seq-of-block-linecounts (simple-simian-report-stream)) =>
 	["au.com.westpac.pda.beans.report.ReportTasksBean" 6
 	 "au.com.westpac.pda.beans.cct.CCTTasksBean" 6
 	 "au.com.westpac.pda.lodge.LodgementUtilities" 7
@@ -113,14 +127,14 @@
 		   "au.com.westpac.pda.beans.report.ReportTasksBean"]
 	second-set ["au.com.westpac.pda.beans.report.ReportTasksBean"
 		    "au.com.westpac.pda.beans.cct.CCTTasksBean"]
-	sim-zip (zip/xml-zip (xml/parse (clojure.contrib.io/input-stream (.getBytes simple-simian-report))))]
+	sim-zip (zip/xml-zip (xml/parse (simple-simian-report-stream)))]
     (fact (extract-seq-of-duplication-sets ...input-xml...) => (just [first-set second-set] :in-any-order)
-	  (provided (zipper-from-xml-input ...input-xml...) => sim-zip))))
+	  (provided (zipper-from-xml-input-stream ...input-xml...) => sim-zip))))
 
 (deftest should-extract-zip-from-string
-  (let [myxml "<root><parent><child>firstchild</child><child>secondchild</child></parent></root>"
-	myzip (zipper-from-xml-input myxml)]
+  (let [myxml (clojure.contrib.io/input-stream
+	       (.getBytes
+		"<root><parent><child>firstchild</child><child>secondchild</child></parent></root>"))
+	myzip (zipper-from-xml-input-stream myxml)]
     (fact (zx/xml-> myzip :parent :child zx/text) => ["firstchild" "secondchild"])))
 
-
-   

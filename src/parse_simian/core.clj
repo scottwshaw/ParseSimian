@@ -38,15 +38,15 @@
 
 (def path-prefix "/Users/avombatk/projects/healthcheck/build/src/")
 
-(defn zipper-from-xml-input [input-xml]
-  (zip/xml-zip (xml/parse (clojure.contrib.io/input-stream (.getBytes input-xml)))))
+(defn zipper-from-xml-input-stream [input-xml-stream]
+  (zip/xml-zip (xml/parse input-xml-stream)))
 
 (defn assoc-class-with-linecount [loc]
   [(to-qualified-classname (zx/attr loc :sourceFile) path-prefix) (Integer. (zx/attr (zip/up loc) :lineCount))])
 
-;; Takes a filename or input-stream
-(defn extract-seq-of-block-linecounts [input]
-  (let [sim-zip (zipper-from-xml-input input)]
+;; Takes an xml string
+(defn extract-seq-of-block-linecounts [input-stream]
+  (let [sim-zip (zipper-from-xml-input-stream input-stream)]
     (zx/xml-> sim-zip :check :set :block assoc-class-with-linecount)))
 
 (defn expand-pairs-from-set [seq-of-classes]
@@ -61,12 +61,12 @@
 (defn class-from-source-file-attr []
   (fn [loc] (to-qualified-classname (zx/attr loc :sourceFile) path-prefix)))
 
-(defn extract-seq-of-duplication-sets [input-xml]
-  (let [sim-zip (zipper-from-xml-input input-xml)]
+(defn extract-seq-of-duplication-sets [input-xml-stream]
+  (let [sim-zip (zipper-from-xml-input-stream input-xml-stream)]
     (map #(zx/xml-> % :block (class-from-source-file-attr)) (zx/xml-> sim-zip :check :set))))
 
-(defn extract-seq-of-relationships [input-xml]
-  (let [sets (extract-seq-of-duplication-sets input-xml)]
+(defn extract-seq-of-relationships [input-xml-stream]
+  (let [sets (extract-seq-of-duplication-sets input-xml-stream)]
     (mapcat expand-pairs-from-set sets)))
 
 (defn increment-linecount-hash [hash [clazz count]]
@@ -76,9 +76,9 @@
 (defn extract-map-of-total-duplicated-lines [input]
   (reduce increment-linecount-hash '{} (partition 2 (extract-seq-of-block-linecounts input))))
 
-(defn parse-simian-report [input]
-  (let [linecount-seq (seq (extract-map-of-total-duplicated-lines input))
-	relationship-seq (extract-seq-of-relationships input)]
+(defn parse-simian-report [input-stream]
+  (let [linecount-seq (seq (extract-map-of-total-duplicated-lines input-stream))
+	relationship-seq (extract-seq-of-relationships input-stream)]
     (loop [[[clazz lc] & restlc] linecount-seq
 	   rs relationship-seq
 	   node-counter 0

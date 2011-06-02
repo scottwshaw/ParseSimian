@@ -6,4 +6,4 @@ Feature: ParseSimianFile
   Scenario: Parse file and dump
     Given I have a Simian output file "simian_report.xml"
     When I run the parser on that file
-    Then then it should produce json output
+    Then it should produce json output

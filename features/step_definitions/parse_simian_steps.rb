@@ -5,10 +5,10 @@ Given /^I have a Simian output file "([^"]*)"$/ do |arg1|
 end
 
 When /^I run the parser on that file$/ do
-  @parsedOutput = %x[../lein run parse_simian #{@simianFile}]
-  @parsedOutput.should_not include("Exception")
+  @parsedOutput = %x[../lein run #{@simianFile}]
+  @parsedOutput.should_not =~ /Exception/
 end
 
-Then /^then it should produce json output$/ do
-  pending # express the regexp above with the code you wish you had
+Then /^it should produce json output$/ do
+  @parsedOutput.should =~ /^\{nodes:\[\S*\}$/
 end

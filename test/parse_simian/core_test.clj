@@ -29,25 +29,27 @@
 	 "Users/avombatk/projects/healthcheck/build/src/") => "au.com.westpac.pda.beans.cct.CCTTasksBean"))
 
 (deftest should-parse-input-xml-and-produce-a-graph-structure
-  (fact (parse-simian-report ...input-xml...) => simple-simian-graph
-	(provided (extract-map-of-total-duplicated-lines ...input-xml...) =>
+  (fact (parse-simian-report ...input-stream...) => simple-simian-graph
+	(provided (zipper-from-xml-input-stream ...input-stream...) => ...input-zip...
+	          (extract-map-of-total-duplicated-lines ...input-zip...) =>
 		  {"au.com.westpac.pda.lodge.rebuid.SystemRebuilderImpl" 7
 		   "au.com.westpac.pda.lodge.LodgementUtilities" 7
 		   "au.com.westpac.pda.beans.cct.CCTTasksBean" 6
 		   "au.com.westpac.pda.beans.report.ReportTasksBean" 13}
-		  (extract-seq-of-relationships ...input-xml...) =>
+		  (extract-seq-of-relationships ...input-zip...) =>
 		  [["au.com.westpac.pda.lodge.LodgementUtilities" "au.com.westpac.pda.lodge.rebuid.SystemRebuilderImpl"]
 		   ["au.com.westpac.pda.lodge.LodgementUtilities" "au.com.westpac.pda.beans.report.ReportTasksBean"]
 		   ["au.com.westpac.pda.beans.report.ReportTasksBean" "au.com.westpac.pda.beans.cct.CCTTasksBean"]])))
 
 (deftest should-parse-input-xml-file-and-produce-a-graph-structure
-  (fact (parse-simian-report ...input-xml...) => simple-simian-graph
-	(provided (extract-map-of-total-duplicated-lines ...input-xml...) =>
+  (fact (parse-simian-report ...input-stream...) => simple-simian-graph
+	(provided (zipper-from-xml-input-stream ...input-stream...) => ...input-zip...
+		  (extract-map-of-total-duplicated-lines ...input-zip...) =>
 		  {"au.com.westpac.pda.lodge.rebuid.SystemRebuilderImpl" 7
 		   "au.com.westpac.pda.lodge.LodgementUtilities" 7
 		   "au.com.westpac.pda.beans.cct.CCTTasksBean" 6
 		   "au.com.westpac.pda.beans.report.ReportTasksBean" 13}
-		  (extract-seq-of-relationships ...input-xml...) =>
+		  (extract-seq-of-relationships ...input-zip...) =>
 		  [["au.com.westpac.pda.lodge.LodgementUtilities" "au.com.westpac.pda.lodge.rebuid.SystemRebuilderImpl"]
 		   ["au.com.westpac.pda.lodge.LodgementUtilities" "au.com.westpac.pda.beans.report.ReportTasksBean"]
 		   ["au.com.westpac.pda.beans.report.ReportTasksBean" "au.com.westpac.pda.beans.cct.CCTTasksBean"]])))
@@ -62,12 +64,13 @@
   (fact (increment-linecount-hash '{"myclass" 3 "myclass2" 3 "myclass3" 3} ["myclass" 6]) => (contains {"myclass" 9})))
 
 (deftest should-extract-seq-of-block-linecounts-from-example-doc
-  (fact (extract-seq-of-block-linecounts (simple-simian-report-stream)) =>
-	["au.com.westpac.pda.beans.report.ReportTasksBean" 6
-	 "au.com.westpac.pda.beans.cct.CCTTasksBean" 6
-	 "au.com.westpac.pda.lodge.LodgementUtilities" 7
-	 "au.com.westpac.pda.lodge.rebuid.SystemRebuilderImpl" 7
-	 "au.com.westpac.pda.beans.report.ReportTasksBean" 7]))
+  (let	[sim-zip (zip/xml-zip (xml/parse (simple-simian-report-stream)))]
+    (fact (extract-seq-of-block-linecounts sim-zip) =>
+	  ["au.com.westpac.pda.beans.report.ReportTasksBean" 6
+	   "au.com.westpac.pda.beans.cct.CCTTasksBean" 6
+	   "au.com.westpac.pda.lodge.LodgementUtilities" 7
+	   "au.com.westpac.pda.lodge.rebuid.SystemRebuilderImpl" 7
+	   "au.com.westpac.pda.beans.report.ReportTasksBean" 7])))
 				    
 (deftest should-extract-map-of-total-duplicated-lines
   (fact (extract-map-of-total-duplicated-lines ...input-xml...) => (contains {:a 1 :b 2 :c 4 :d 6})
@@ -97,8 +100,8 @@
 			     "au.com.westpac.pda.beans.report.ReportTasksBean"]]
 	second-seq-of-pairs[["au.com.westpac.pda.beans.report.ReportTasksBean"
 			     "au.com.westpac.pda.beans.cct.CCTTasksBean"]]]
-    (fact (extract-seq-of-relationships ...input-xml...) => seq-of-relationships
-	  (provided (extract-seq-of-duplication-sets ...input-xml...) => [first-set second-set]
+    (fact (extract-seq-of-relationships ...input-zip...) => seq-of-relationships
+	  (provided (extract-seq-of-duplication-sets ...input-zip...) => [first-set second-set]
 		    (expand-pairs-from-set first-set) => first-seq-of-pairs
 		    (expand-pairs-from-set second-set) => second-seq-of-pairs))))
 
@@ -128,8 +131,7 @@
 	second-set ["au.com.westpac.pda.beans.report.ReportTasksBean"
 		    "au.com.westpac.pda.beans.cct.CCTTasksBean"]
 	sim-zip (zip/xml-zip (xml/parse (simple-simian-report-stream)))]
-    (fact (extract-seq-of-duplication-sets ...input-xml...) => (just [first-set second-set] :in-any-order)
-	  (provided (zipper-from-xml-input-stream ...input-xml...) => sim-zip))))
+    (fact (extract-seq-of-duplication-sets sim-zip) => (just [first-set second-set] :in-any-order))))
 
 (deftest should-extract-zip-from-string
   (let [myxml (clojure.contrib.io/input-stream
@@ -137,4 +139,3 @@
 		"<root><parent><child>firstchild</child><child>secondchild</child></parent></root>"))
 	myzip (zipper-from-xml-input-stream myxml)]
     (fact (zx/xml-> myzip :parent :child zx/text) => ["firstchild" "secondchild"])))
-

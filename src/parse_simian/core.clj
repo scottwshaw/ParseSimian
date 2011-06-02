@@ -44,11 +44,6 @@
 (defn assoc-class-with-linecount [loc]
   [(to-qualified-classname (zx/attr loc :sourceFile) path-prefix) (Integer. (zx/attr (zip/up loc) :lineCount))])
 
-;; Takes an xml string
-(defn extract-seq-of-block-linecounts [input-stream]
-  (let [sim-zip (zipper-from-xml-input-stream input-stream)]
-    (zx/xml-> sim-zip :check :set :block assoc-class-with-linecount)))
-
 (defn expand-pairs-from-set [seq-of-classes]
   (loop [[first-class & rest-classes] seq-of-classes
 	 seq-of-pairs []]
@@ -61,24 +56,31 @@
 (defn class-from-source-file-attr []
   (fn [loc] (to-qualified-classname (zx/attr loc :sourceFile) path-prefix)))
 
-(defn extract-seq-of-duplication-sets [input-xml-stream]
-  (let [sim-zip (zipper-from-xml-input-stream input-xml-stream)]
-    (map #(zx/xml-> % :block (class-from-source-file-attr)) (zx/xml-> sim-zip :check :set))))
+;;; These next 2 functions are the core.
+;;; This one extracts the files across which duplication occurs
+(defn extract-seq-of-duplication-sets [sim-zip]
+  (map #(zx/xml-> % :block (class-from-source-file-attr)) (zx/xml-> sim-zip :check :set)))
 
-(defn extract-seq-of-relationships [input-xml-stream]
-  (let [sets (extract-seq-of-duplication-sets input-xml-stream)]
+;;; This one extracts the number of lines duplicated in each duplication set
+(defn extract-seq-of-block-linecounts [sim-zip]
+  (zx/xml-> sim-zip :check :set :block assoc-class-with-linecount))
+
+;;; input is a zipper created from simian xml output
+(defn extract-seq-of-relationships [sim-zip]
+  (let [sets (extract-seq-of-duplication-sets sim-zip)]
     (mapcat expand-pairs-from-set sets)))
 
 (defn increment-linecount-hash [hash [clazz count]]
   (if (contains? hash clazz) (assoc hash clazz (+ count (get hash clazz)))
       (assoc hash clazz count)))
 
-(defn extract-map-of-total-duplicated-lines [input]
-  (reduce increment-linecount-hash '{} (partition 2 (extract-seq-of-block-linecounts input))))
+(defn extract-map-of-total-duplicated-lines [input-zip]
+  (reduce increment-linecount-hash '{} (partition 2 (extract-seq-of-block-linecounts input-zip))))
 
 (defn parse-simian-report [input-stream]
-  (let [linecount-seq (seq (extract-map-of-total-duplicated-lines input-stream))
-	relationship-seq (extract-seq-of-relationships input-stream)]
+  (let [sim-zip (zipper-from-xml-input-stream input-stream)
+	linecount-seq (seq (extract-map-of-total-duplicated-lines sim-zip))
+	relationship-seq (extract-seq-of-relationships sim-zip)]
     (loop [[[clazz lc] & restlc] linecount-seq
 	   rs relationship-seq
 	   node-counter 0
@@ -89,8 +91,3 @@
 	       (postwalk-replace {clazz node-counter} rs)
 	       (inc node-counter)
 	       (cons {:nodename clazz :group :class :size lc} node-seq))))))
-
-
-
-
-

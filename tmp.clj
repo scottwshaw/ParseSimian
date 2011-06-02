@@ -119,3 +119,4 @@ simple-simian-report
 
 (clojure.contrib.repl-utils/show (clojure.contrib.io/input-stream "simian_report.xml"))
 
+(parse-simian-report (clojure.contrib.io/input-stream "simian_report.xml"))

@@ -45,13 +45,14 @@
   [(to-qualified-classname (zx/attr loc :sourceFile) path-prefix) (Integer. (zx/attr (zip/up loc) :lineCount))])
 
 (defn expand-pairs-from-set [seq-of-classes]
-  (loop [[first-class & rest-classes] seq-of-classes
-	 seq-of-pairs []]
-    (if (nil? rest-classes)
-      seq-of-pairs
-      (recur rest-classes
-	     (reduce (fn [pair-seq-inner next-item] (cons [first-class next-item] pair-seq-inner))
-		     seq-of-pairs rest-classes)))))
+  (distinct (filter (fn [[item1 item2]] (not (= item1 item2)))
+		    (loop [[first-class & rest-classes] seq-of-classes
+			   seq-of-pairs []]
+		      (if (nil? rest-classes)
+			seq-of-pairs
+			(recur rest-classes
+			       (reduce (fn [pair-seq-inner next-item] (cons [first-class next-item] pair-seq-inner))
+				       seq-of-pairs rest-classes)))))))
 
 (defn class-from-source-file-attr []
   (fn [loc] (to-qualified-classname (zx/attr loc :sourceFile) path-prefix)))
@@ -90,4 +91,4 @@
 	(recur restlc
 	       (postwalk-replace {clazz node-counter} rs)
 	       (inc node-counter)
-	       (cons {:nodename clazz :group :class :size lc} node-seq))))))
+	       (cons {:nodeName clazz :group :class :size lc} node-seq))))))

@@ -9,6 +9,10 @@ When /^I run the parser on that file$/ do
   @parsedOutput.should_not =~ /Exception/
 end
 
-Then /^it should produce json output$/ do
-  @parsedOutput.should =~ /^\{nodes:\[\S*\}$/
+Then /^it should produce json output starting with "([^"]*)"$/ do |arg1|
+  @parsedOutput.should =~ /^#{arg1}/
+end
+
+Then /^end with "([^"]*)"$/ do |arg1|
+  @parsedOutput.should =~ /#{arg1}$/
 end

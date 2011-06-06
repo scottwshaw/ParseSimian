@@ -112,11 +112,16 @@ simple-simian-report
 
 (json-str (parse-simian-report simple-simian-report))
 
-(use 'clojure.contrib.repl-utils)
-(clojure.contrib.repl-utils/show (clojure.contrib.io/reader "simian_report.xml"))
+(require '(clojure.contrib (repl-utils :as ru))
+	 '(clojure.contrib (io :as io)))
+	 
 
-(.readLine (clojure.contrib.io/reader "simian_report.xml"))
+(ru/show (io/reader "simian_report.xml"))
+
+(.readLine (io/reader "simian_report.xml"))
 
 (clojure.contrib.repl-utils/show (clojure.contrib.io/input-stream "simian_report.xml"))
 
 (parse-simian-report (clojure.contrib.io/input-stream "simian_report.xml"))
+
+(require '(clojure.contrib (combinatorics :as combi)))

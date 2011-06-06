@@ -6,7 +6,8 @@
   (:use [midje.sweet :only [unfinished]]) ; only a dev dependency
   (:require (clojure [xml :as xml] [zip :as zip])
 	    [clojure.contrib.zip-filter.xml :as zx]
-	    [clojure.contrib.str-utils2 :as str])
+	    [clojure.contrib.str-utils2 :as str]
+	    [clojure.contrib.combinatorics :as combi])
   (:import (java.io PrintWriter PushbackReader StringWriter StringReader Reader EOFException)))
 
 ;; Hack to get clojure.contrib.json to write arrays without the quotes around keys
@@ -45,37 +46,34 @@
   [(to-qualified-classname (zx/attr loc :sourceFile) path-prefix) (Integer. (zx/attr (zip/up loc) :lineCount))])
 
 (defn expand-pairs-from-set [seq-of-classes]
-  (distinct (filter (fn [[item1 item2]] (not (= item1 item2)))
-		    (loop [[first-class & rest-classes] seq-of-classes
-			   seq-of-pairs []]
-		      (if (nil? rest-classes)
-			seq-of-pairs
-			(recur rest-classes
-			       (reduce (fn [pair-seq-inner next-item] (cons [first-class next-item] pair-seq-inner))
-				       seq-of-pairs rest-classes)))))))
+  "finds all the distinct pairs that aren't a class and itelf"
+  (distinct
+   (filter (fn [[item1 item2]] (not (= item1 item2)))
+	   (combi/combinations seq-of-classes 2))))
 
 (defn class-from-source-file-attr []
   (fn [loc] (to-qualified-classname (zx/attr loc :sourceFile) path-prefix)))
 
-;;; These next 2 functions are the core.
-;;; This one extracts the files across which duplication occurs
 (defn extract-seq-of-duplication-sets [sim-zip]
+  "extracts the files across which duplication occurs"
   (map #(zx/xml-> % :block (class-from-source-file-attr)) (zx/xml-> sim-zip :check :set)))
 
-;;; This one extracts the number of lines duplicated in each duplication set
 (defn extract-seq-of-block-linecounts [sim-zip]
+  "extracts the number of lines duplicated in each duplication set"
   (zx/xml-> sim-zip :check :set :block assoc-class-with-linecount))
 
-;;; input is a zipper created from simian xml output
 (defn extract-seq-of-relationships [sim-zip]
+  "input is a zipper created from simian xml output"
   (let [sets (extract-seq-of-duplication-sets sim-zip)]
     (mapcat expand-pairs-from-set sets)))
 
 (defn increment-linecount-hash [hash [clazz count]]
+  "used in a reduce to either add a new class to the hash or increment the count for a class already present"
   (if (contains? hash clazz) (assoc hash clazz (+ count (get hash clazz)))
       (assoc hash clazz count)))
 
 (defn extract-map-of-total-duplicated-lines [input-zip]
+  "for each file, computes and stores the total number of lines duplicated"
   (reduce increment-linecount-hash '{} (partition 2 (extract-seq-of-block-linecounts input-zip))))
 
 (defn package-name-from-class [fully-qualified-class]

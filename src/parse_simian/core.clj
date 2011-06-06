@@ -51,12 +51,11 @@
    (filter (fn [[item1 item2]] (not (= item1 item2)))
 	   (combi/combinations seq-of-classes 2))))
 
-(defn class-from-source-file-attr []
-  (fn [loc] (to-qualified-classname (zx/attr loc :sourceFile) path-prefix)))
-
 (defn extract-seq-of-duplication-sets [sim-zip]
   "extracts the files across which duplication occurs"
-  (map #(zx/xml-> % :block (class-from-source-file-attr)) (zx/xml-> sim-zip :check :set)))
+  (let [class-from-file-attr
+	(fn [loc] (to-qualified-classname (zx/attr loc :sourceFile) path-prefix))]
+    (map #(zx/xml-> % :block class-from-file-attr) (zx/xml-> sim-zip :check :set))))
 
 (defn extract-seq-of-block-linecounts [sim-zip]
   "extracts the number of lines duplicated in each duplication set"

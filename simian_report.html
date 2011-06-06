@@ -26,7 +26,8 @@
       var force = vis.add(pv.Layout.Force)
       .nodes(simian_report.nodes)
       .links(simian_report.links)
-      .springDamping(0.05);
+      .springDamping(0.05)
+      .chargeConstant(-40);
 
       force.link.add(pv.Line);
 

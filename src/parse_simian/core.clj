@@ -1,12 +1,11 @@
 (ns parse-simian.core
   (:use clojure.contrib.json
-	[clojure.contrib.string :only [as-str replace-re]]
-  	[clojure.walk :only [postwalk-replace postwalk]]
-	[clojure.contrib.io :only [input-stream]])
+  	[clojure.walk :only [postwalk-replace postwalk]])
   (:use [midje.sweet :only [unfinished]]) ; only a dev dependency
   (:require (clojure [xml :as xml] [zip :as zip])
+	    [clojure.contrib.string :as str]
 	    [clojure.contrib.zip-filter.xml :as zx]
-	    [clojure.contrib.str-utils2 :as str]
+	    [clojure.contrib.str-utils2 :as str2]
 	    [clojure.contrib.combinatorics :as combi])
   (:import (java.io PrintWriter PushbackReader StringWriter StringReader Reader EOFException)))
 
@@ -18,7 +17,7 @@
       (let [[k v] (first x)]
         (when (nil? k)
           (throw (Exception. "JSON object keys cannot be nil/null")))
-        (.print out (as-str k))
+        (.print out (str/as-str k))
         (.print out \:)
         (write-json v out))
       (let [nxt (next x)]
@@ -33,7 +32,7 @@
         {:write-json write-json-object-without-quotes})
 
 (defn to-qualified-classname [file-path prefix]
-  (str/replace (str/replace (str/replace file-path prefix "") "/" ".") ".java" ""))
+  (str2/replace (str2/replace (str2/replace file-path prefix "") "/" ".") ".java" ""))
 
 (def path-prefix "/Users/avombatk/projects/healthcheck/build/src/")
 
@@ -74,10 +73,10 @@
   (reduce increment-linecount-hash '{} (partition 2 (extract-seq-of-block-linecounts input-zip))))
 
 (defn package-name-from-class [fully-qualified-class]
-  (replace-re #"\.\w+$" "" fully-qualified-class))
+  (str/replace-re #"\.\w+$" "" fully-qualified-class))
 
-(defn parse-simian-report [input-stream]
-  (let [sim-zip (zipper-from-xml-input-stream input-stream)
+(defn parse-simian-report [xml-input-stream]
+  (let [sim-zip (zipper-from-xml-input-stream xml-input-stream)
 	linecount-seq (seq (extract-map-of-total-duplicated-lines sim-zip))
 	relationship-seq (extract-seq-of-relationships sim-zip)]
     (loop [[[clazz lc] & restlc] linecount-seq

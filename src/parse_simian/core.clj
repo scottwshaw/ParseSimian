@@ -1,6 +1,6 @@
 (ns parse-simian.core
   (:use clojure.contrib.json
-	[clojure.contrib.string :only [as-str]]
+	[clojure.contrib.string :only [as-str replace-re]]
   	[clojure.walk :only [postwalk-replace postwalk]]
 	[clojure.contrib.io :only [input-stream]])
   (:use [midje.sweet :only [unfinished]]) ; only a dev dependency
@@ -78,6 +78,9 @@
 (defn extract-map-of-total-duplicated-lines [input-zip]
   (reduce increment-linecount-hash '{} (partition 2 (extract-seq-of-block-linecounts input-zip))))
 
+(defn package-name-from-class [fully-qualified-class]
+  (replace-re #"\.\w+$" "" fully-qualified-class))
+
 (defn parse-simian-report [input-stream]
   (let [sim-zip (zipper-from-xml-input-stream input-stream)
 	linecount-seq (seq (extract-map-of-total-duplicated-lines sim-zip))
@@ -91,4 +94,4 @@
 	(recur restlc
 	       (postwalk-replace {clazz node-counter} rs)
 	       (inc node-counter)
-	       (cons {:nodeName clazz :group :class :size lc} node-seq))))))
+	       (cons {:nodeName clazz :group (package-name-from-class clazz) :size lc} node-seq))))))

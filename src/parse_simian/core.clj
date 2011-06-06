@@ -1,12 +1,12 @@
 (ns parse-simian.core
-  (:use clojure.contrib.json
-  	[clojure.walk :only [postwalk-replace postwalk]])
+  (:use clojure.contrib.json)
   (:use [midje.sweet :only [unfinished]]) ; only a dev dependency
   (:require (clojure [xml :as xml] [zip :as zip])
 	    [clojure.contrib.string :as str]
 	    [clojure.contrib.zip-filter.xml :as zx]
 	    [clojure.contrib.str-utils2 :as str2]
-	    [clojure.contrib.combinatorics :as combi])
+	    [clojure.contrib.combinatorics :as combi]
+	    [clojure.walk :as walk])
   (:import (java.io PrintWriter PushbackReader StringWriter StringReader Reader EOFException)))
 
 ;; Hack to get clojure.contrib.json to write arrays without the quotes around keys
@@ -86,6 +86,6 @@
       (if (nil? lc)
 	{:nodes node-seq :links (map (fn [[s t]] {:source s :target t :value 1}) rs)}
 	(recur restlc
-	       (postwalk-replace {clazz node-counter} rs)
+	       (walk/postwalk-replace {clazz node-counter} rs)
 	       (inc node-counter)
 	       (cons {:nodeName clazz :group (package-name-from-class clazz) :size lc} node-seq))))))

@@ -1,7 +1,7 @@
 (ns parse-simian.core
-  (:use clojure.contrib.json)
   (:use [midje.sweet :only [unfinished]]) ; only a dev dependency
   (:require (clojure [xml :as xml] [zip :as zip])
+	    [clojure.contrib.json :as json]
 	    [clojure.contrib.string :as str]
 	    [clojure.contrib.zip-filter.xml :as zx]
 	    [clojure.contrib.str-utils2 :as str2]
@@ -19,7 +19,7 @@
           (throw (Exception. "JSON object keys cannot be nil/null")))
         (.print out (str/as-str k))
         (.print out \:)
-        (write-json v out))
+        (json/write-json v out))
       (let [nxt (next x)]
         (when (seq nxt)
           (.print out \,)
@@ -28,7 +28,7 @@
 
 ;; This overrides the extension for Map objects on the protocol Write-JSON
 ;; Yikes!  this appears brittle
-(extend java.util.Map Write-JSON
+(extend java.util.Map json/Write-JSON
         {:write-json write-json-object-without-quotes})
 
 (defn to-qualified-classname [file-path prefix]

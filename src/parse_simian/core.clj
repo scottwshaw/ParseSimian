@@ -7,7 +7,7 @@
 	     [string :as str]
 	     [str-utils2 :as str2]]
 	    [clojure.contrib.zip-filter.xml :as zx])
-  (:import (java.io PrintWriter PushbackReader StringWriter StringReader Reader EOFException)))
+  (:import (java.io EOFException)))
 
 (defn to-qualified-classname [file-path prefix]
   (str2/replace (str2/replace (str2/replace file-path prefix "") "/" ".") ".java" ""))

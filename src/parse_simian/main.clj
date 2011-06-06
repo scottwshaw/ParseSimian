@@ -5,7 +5,7 @@
 	     [command-line :as cl]
 	     [string :as str]]
 	    [parse-simian.core :as ps])
-  (:import (java.io PrintWriter PushbackReader StringWriter StringReader Reader EOFException)))
+  (:import (java.io PrintWriter)))
 
 ;; Hack to get clojure.contrib.json to write arrays without the quotes around keys
 (defn- write-json-object-without-quotes [m #^PrintWriter out]

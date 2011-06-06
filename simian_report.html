@@ -27,7 +27,8 @@
       .nodes(simian_report.nodes)
       .links(simian_report.links)
       .springDamping(0.05)
-      .chargeConstant(-40);
+      .chargeConstant(-20)
+      .bound(true);
 
       force.link.add(pv.Line);
 

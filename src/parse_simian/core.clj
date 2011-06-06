@@ -1,12 +1,12 @@
 (ns parse-simian.core
   (:use [midje.sweet :only [unfinished]]) ; only a dev dependency
-  (:require (clojure [xml :as xml] [zip :as zip])
-	    [clojure.contrib.json :as json]
-	    [clojure.contrib.string :as str]
-	    [clojure.contrib.zip-filter.xml :as zx]
-	    [clojure.contrib.str-utils2 :as str2]
-	    [clojure.contrib.combinatorics :as combi]
-	    [clojure.walk :as walk])
+  (:require (clojure [xml :as xml] [walk :as walk] [zip :as zip])
+	    [clojure.contrib
+	     [combinatorics :as combi]
+	     [json :as json]
+	     [string :as str]
+	     [str-utils2 :as str2]]
+	    [clojure.contrib.zip-filter.xml :as zx])
   (:import (java.io PrintWriter PushbackReader StringWriter StringReader Reader EOFException)))
 
 ;; Hack to get clojure.contrib.json to write arrays without the quotes around keys

@@ -18,9 +18,7 @@
       (let [[k v] (first x)]
         (when (nil? k)
           (throw (Exception. "JSON object keys cannot be nil/null")))
-;        (.print out \")
         (.print out (as-str k))
-;        (.print out \")
         (.print out \:)
         (write-json v out))
       (let [nxt (next x)]
@@ -42,7 +40,7 @@
 (defn zipper-from-xml-input-stream [input-xml-stream]
   (zip/xml-zip (xml/parse input-xml-stream)))
 
-(defn assoc-class-with-linecount [loc]
+(defn- assoc-class-with-linecount [loc]
   [(to-qualified-classname (zx/attr loc :sourceFile) path-prefix) (Integer. (zx/attr (zip/up loc) :lineCount))])
 
 (defn expand-pairs-from-set [seq-of-classes]

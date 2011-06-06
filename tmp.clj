@@ -125,3 +125,7 @@ simple-simian-report
 (parse-simian-report (clojure.contrib.io/input-stream "simian_report.xml"))
 
 (require '(clojure.contrib (combinatorics :as combi)))
+
+(vec (combi/combinations [:a :b :c :d] 2))
+
+(str/split "simian_report.xml" #"\.")

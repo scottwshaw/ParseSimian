@@ -54,6 +54,7 @@
   (str/replace-re #"\.\w+$" "" fully-qualified-class))
 
 (defn parse-simian-report [xml-input-stream]
+  "Create two seqs of linecounts and relationships, then loop through, constructing output"
   (let [sim-zip (zipper-from-xml-input-stream xml-input-stream)
 	linecount-seq (seq (extract-map-of-total-duplicated-lines sim-zip))
 	relationship-seq (extract-seq-of-relationships sim-zip)]

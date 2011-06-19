@@ -1,16 +1,13 @@
 (ns parse-simian.core-test
   (:use :reload parse-simian.core)
-  (:use	clojure.contrib.json clojure.test
-	[midje.sweet :only [fact unfinished]]
-	[midje.checkers :only [exactly truthy]]
-  	[midje.checkers.collection :only [contains just]])
-  (:require clojure.contrib.io)
+  (:use	clojure.contrib.json clojure.test)
+  (:use midje.sweet)
   (:require (clojure [xml :as xml] [zip :as zip])
+	    [clojure.contrib.io :as io]
 	    [clojure.contrib.zip-filter.xml :as zx]))
 
 (defn- simple-simian-report-stream []
   (clojure.contrib.io/input-stream (.getBytes  "<?xml version=\"1.0\" encoding=\"UTF-8\"?><?xml-stylesheet href=\"simian.xsl\" type=\"text/xsl\"?><!--Similarity Analyser 2.2.24 - http://www.redhillconsulting.com.au/products/simian/index.htmlCopyright (c) 2003-08 RedHill Consulting Pty. Ltd.  All rights reserved.Simian is not free unless used solely for non-commercial or evaluation purposes.--><simian version=\"2.2.24\">    <check ignoreCharacterCase=\"true\" ignoreCurlyBraces=\"true\" ignoreIdentifierCase=\"true\" ignoreModifiers=\"true\" ignoreStringCase=\"true\" threshold=\"6\"><set lineCount=\"6\">            <block sourceFile=\"/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/report/ReportTasksBean.java\" startLineNumber=\"333\" endLineNumber=\"340\"/>            <block sourceFile=\"/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/cct/CCTTasksBean.java\" startLineNumber=\"187\" endLineNumber=\"194\"/>        </set> <set lineCount=\"7\"> <block sourceFile=\"/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/LodgementUtilities.java\" startLineNumber=\"175\" endLineNumber=\"182\"/>            <block sourceFile=\"/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/lodge/rebuid/SystemRebuilderImpl.java\" startLineNumber=\"199\" endLineNumber=\"206\"/>    <block sourceFile=\"/Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/report/ReportTasksBean.java\" startLineNumber=\"333\" endLineNumber=\"340\"/>    </set><summary duplicateFileCount=\"241\" duplicateLineCount=\"10208\" duplicateBlockCount=\"830\" totalFileCount=\"662\" totalRawLineCount=\"138208\" totalSignificantLineCount=\"60994\" processingTime=\"1173\"/>     </check></simian>")))
-
 
 (def simple-simian-graph
      {:nodes [{:nodeName "au.com.westpac.pda.beans.report.ReportTasksBean" :group "au.com.westpac.pda.beans.report" :size 13}
@@ -23,44 +20,41 @@
 
 (deftest shouldConvertPathWithClassfileToQualifiedClassName
   (fact (to-qualified-classname
-	 "Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/cct/CCTTasksBean.java"
-	 "Users/avombatk/projects/healthcheck/build/src/") => "au.com.westpac.pda.beans.cct.CCTTasksBean"))
+	   "Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/cct/CCTTasksBean.java"
+	   "Users/avombatk/projects/healthcheck/build/src/") => "au.com.westpac.pda.beans.cct.CCTTasksBean"))
 
 (deftest should-parse-input-xml-and-produce-a-graph-structure
   (fact (parse-simian-report ...input-stream...) => simple-simian-graph
-	(provided (zipper-from-xml-input-stream ...input-stream...) => ...input-zip...
-	          (extract-map-of-total-duplicated-lines ...input-zip...) =>
-		  {"au.com.westpac.pda.lodge.rebuid.SystemRebuilderImpl" 7
-		   "au.com.westpac.pda.lodge.LodgementUtilities" 7
-		   "au.com.westpac.pda.beans.cct.CCTTasksBean" 6
-		   "au.com.westpac.pda.beans.report.ReportTasksBean" 13}
-		  (extract-seq-of-relationships ...input-zip...) =>
-		  [["au.com.westpac.pda.lodge.LodgementUtilities" "au.com.westpac.pda.lodge.rebuid.SystemRebuilderImpl"]
-		   ["au.com.westpac.pda.lodge.LodgementUtilities" "au.com.westpac.pda.beans.report.ReportTasksBean"]
-		   ["au.com.westpac.pda.beans.report.ReportTasksBean" "au.com.westpac.pda.beans.cct.CCTTasksBean"]]
-		  (package-name-from-class "au.com.westpac.pda.lodge.rebuid.SystemRebuilderImpl") => "au.com.westpac.pda.lodge.rebuid"
-		  (package-name-from-class "au.com.westpac.pda.lodge.LodgementUtilities") => "au.com.westpac.pda.lodge"
-		  (package-name-from-class "au.com.westpac.pda.beans.cct.CCTTasksBean") => "au.com.westpac.pda.beans.cct"
-		  (package-name-from-class "au.com.westpac.pda.beans.report.ReportTasksBean") => "au.com.westpac.pda.beans.report")))
-
+	  (provided (zipper-from-xml-input-stream ...input-stream...) => ...input-zip...
+		    (extract-map-of-total-duplicated-lines ...input-zip...) => {"au.com.westpac.pda.lodge.rebuid.SystemRebuilderImpl" 7
+										"au.com.westpac.pda.lodge.LodgementUtilities" 7
+										"au.com.westpac.pda.beans.cct.CCTTasksBean" 6
+										"au.com.westpac.pda.beans.report.ReportTasksBean" 13}
+		    (extract-seq-of-relationships ...input-zip...) =>
+		    [["au.com.westpac.pda.lodge.LodgementUtilities" "au.com.westpac.pda.lodge.rebuid.SystemRebuilderImpl"]
+		     ["au.com.westpac.pda.lodge.LodgementUtilities" "au.com.westpac.pda.beans.report.ReportTasksBean"]
+		     ["au.com.westpac.pda.beans.report.ReportTasksBean" "au.com.westpac.pda.beans.cct.CCTTasksBean"]]
+		    (package-name-from-class "au.com.westpac.pda.lodge.rebuid.SystemRebuilderImpl") => "au.com.westpac.pda.lodge.rebuid"
+		    (package-name-from-class "au.com.westpac.pda.lodge.LodgementUtilities") => "au.com.westpac.pda.lodge"
+		    (package-name-from-class "au.com.westpac.pda.beans.cct.CCTTasksBean") => "au.com.westpac.pda.beans.cct"
+		    (package-name-from-class "au.com.westpac.pda.beans.report.ReportTasksBean") => "au.com.westpac.pda.beans.report")))
 
 (deftest should-parse-input-xml-file-and-produce-a-graph-structure
   (fact (parse-simian-report ...input-stream...) => simple-simian-graph
-	(provided (zipper-from-xml-input-stream ...input-stream...) => ...input-zip...
-		  (extract-map-of-total-duplicated-lines ...input-zip...) =>
-		  {"au.com.westpac.pda.lodge.rebuid.SystemRebuilderImpl" 7
-		   "au.com.westpac.pda.lodge.LodgementUtilities" 7
-		   "au.com.westpac.pda.beans.cct.CCTTasksBean" 6
-		   "au.com.westpac.pda.beans.report.ReportTasksBean" 13}
-		  (extract-seq-of-relationships ...input-zip...) =>
-		  [["au.com.westpac.pda.lodge.LodgementUtilities" "au.com.westpac.pda.lodge.rebuid.SystemRebuilderImpl"]
-		   ["au.com.westpac.pda.lodge.LodgementUtilities" "au.com.westpac.pda.beans.report.ReportTasksBean"]
-		   ["au.com.westpac.pda.beans.report.ReportTasksBean" "au.com.westpac.pda.beans.cct.CCTTasksBean"]]
-		  (package-name-from-class "au.com.westpac.pda.lodge.rebuid.SystemRebuilderImpl") => "au.com.westpac.pda.lodge.rebuid"
-		  (package-name-from-class "au.com.westpac.pda.lodge.LodgementUtilities") => "au.com.westpac.pda.lodge"
-		  (package-name-from-class "au.com.westpac.pda.beans.cct.CCTTasksBean") => "au.com.westpac.pda.beans.cct"
-		  (package-name-from-class "au.com.westpac.pda.beans.report.ReportTasksBean") => "au.com.westpac.pda.beans.report")))
-
+	  (provided (zipper-from-xml-input-stream ...input-stream...) => ...input-zip...
+		    (extract-map-of-total-duplicated-lines ...input-zip...) =>
+		    {"au.com.westpac.pda.lodge.rebuid.SystemRebuilderImpl" 7
+		     "au.com.westpac.pda.lodge.LodgementUtilities" 7
+		     "au.com.westpac.pda.beans.cct.CCTTasksBean" 6
+		     "au.com.westpac.pda.beans.report.ReportTasksBean" 13}
+		    (extract-seq-of-relationships ...input-zip...) =>
+		    [["au.com.westpac.pda.lodge.LodgementUtilities" "au.com.westpac.pda.lodge.rebuid.SystemRebuilderImpl"]
+		     ["au.com.westpac.pda.lodge.LodgementUtilities" "au.com.westpac.pda.beans.report.ReportTasksBean"]
+		     ["au.com.westpac.pda.beans.report.ReportTasksBean" "au.com.westpac.pda.beans.cct.CCTTasksBean"]]
+		    (package-name-from-class "au.com.westpac.pda.lodge.rebuid.SystemRebuilderImpl") => "au.com.westpac.pda.lodge.rebuid"
+		    (package-name-from-class "au.com.westpac.pda.lodge.LodgementUtilities") => "au.com.westpac.pda.lodge"
+		    (package-name-from-class "au.com.westpac.pda.beans.cct.CCTTasksBean") => "au.com.westpac.pda.beans.cct"
+		    (package-name-from-class "au.com.westpac.pda.beans.report.ReportTasksBean") => "au.com.westpac.pda.beans.report")))
 
 (deftest should-create-new-linecount-entry-for-single-pair
   (fact (increment-linecount-hash '{} ["myclass" 6]) => (contains {"myclass" 6})))

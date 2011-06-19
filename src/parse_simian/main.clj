@@ -36,4 +36,3 @@
     (let [[filename & frest] filevec
 	  [rootname & srest] (str/split  #"\." filename)]
       (print "var " rootname " = " (json/json-str (ps/parse-simian-report (io/input-stream filename))) ";"))))
-

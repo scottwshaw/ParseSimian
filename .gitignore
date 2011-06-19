@@ -5,3 +5,4 @@ lib/
 .#*
 classes/
 simian_report.js
+tmp/

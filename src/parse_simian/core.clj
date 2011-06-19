@@ -1,5 +1,4 @@
 (ns parse-simian.core
-  (:use [midje.sweet :only [unfinished]]) ; only a dev dependency
   (:require (clojure [xml :as xml] [walk :as walk] [zip :as zip])
 	    [clojure.contrib
 	     [combinatorics :as combi]

@@ -1,4 +1,4 @@
-Feature: PostSimianWeb
+Feature: PostSimianWebService
   In order to serve remote users
   As a code reviewer
   I want to post a simian report over http and have the parsed JSON come back to me

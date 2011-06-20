@@ -24,5 +24,6 @@ Feature: PostSimianWeb
     </check></simian>
     """
     When I post it to the application
-    Then I get back a web page 
-    And it contains a JSON graph
+    Then it should produce an OK response
+    And the body should contain JSON starting with "var\s*simian_report\s*=\s*\{nodes:\[\{nodeName"
+    And the body should end with "\s*}\s*;\s*"

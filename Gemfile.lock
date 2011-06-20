@@ -12,6 +12,7 @@ GEM
       xpath (~> 0.1.4)
     childprocess (0.1.9)
       ffi (~> 1.0.6)
+    crack (0.1.8)
     cucumber (0.10.7)
       builder (>= 2.1.2)
       diff-lcs (>= 1.1.2)
@@ -22,6 +23,8 @@ GEM
     ffi (1.0.9)
     gherkin (2.4.0)
       json (>= 1.4.6)
+    httparty (0.7.8)
+      crack (= 0.1.8)
     json (1.5.2)
     json_pure (1.5.2)
     mime-types (1.16)
@@ -57,5 +60,6 @@ PLATFORMS
 DEPENDENCIES
   capybara
   cucumber
+  httparty
   rspec
   service_manager

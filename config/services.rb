@@ -1,4 +1,4 @@
-  ServiceManager.define_service "main-web" do |s|
+  ServiceManager.define_service "psim-server" do |s|
 
     # this is the host and port the service will be available on. If something is 
     # responding here, don't try to start it again because it's already running

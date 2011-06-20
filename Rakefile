@@ -2,19 +2,18 @@
 require 'rubygems'
 require 'cucumber'
 require 'cucumber/rake/task'
+require 'service_manager'
 
-task :default => 'features'
+task :default => [:startServer, 'features', :killServer]
 
 Cucumber::Rake::Task.new(:features) do |t|
   t.cucumber_opts = "--format pretty" # Any valid command line option can go here.
 end
 
 task :startServer do
-  @pipe = IO.popen("../lein ring server-headless", "r")
-  line = @pipe.readline until line =~ /Started server on port 3000/
-  puts "server started"
+  ServiceManager.start
 end
 
 task :killServer do
-  @pipe.close
+  ServiceManager.stop
 end

@@ -1,34 +1,31 @@
 GEM
   remote: http://rubygems.org/
   specs:
+    background_process (1.3)
     builder (3.0.0)
-    capybara (0.4.1.2)
-      celerity (>= 0.7.9)
-      culerity (>= 0.2.4)
+    capybara (1.0.0)
       mime-types (>= 1.16)
       nokogiri (>= 1.3.3)
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
-      selenium-webdriver (>= 0.0.27)
-      xpath (~> 0.1.3)
-    celerity (0.8.9)
+      selenium-webdriver (~> 0.2.0)
+      xpath (~> 0.1.4)
     childprocess (0.1.9)
       ffi (~> 1.0.6)
-    cucumber (0.10.6)
+    cucumber (0.10.7)
       builder (>= 2.1.2)
       diff-lcs (>= 1.1.2)
       gherkin (~> 2.4.0)
       json (>= 1.4.6)
       term-ansicolor (>= 1.0.5)
-    culerity (0.2.15)
     diff-lcs (1.1.2)
     ffi (1.0.9)
     gherkin (2.4.0)
       json (>= 1.4.6)
-    json (1.5.1)
-    json_pure (1.5.1)
+    json (1.5.2)
+    json_pure (1.5.2)
     mime-types (1.16)
-    nokogiri (1.4.4)
+    nokogiri (1.4.5)
     rack (1.3.0)
     rack-test (0.6.0)
       rack (>= 1.0)
@@ -46,6 +43,10 @@ GEM
       ffi (>= 1.0.7)
       json_pure
       rubyzip
+    service_manager (0.6)
+      background_process (>= 1.2)
+      tcpsocket-wait
+    tcpsocket-wait (1.0.0)
     term-ansicolor (1.0.5)
     xpath (0.1.4)
       nokogiri (~> 1.3)
@@ -57,3 +58,4 @@ DEPENDENCIES
   capybara
   cucumber
   rspec
+  service_manager

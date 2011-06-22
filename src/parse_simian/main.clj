@@ -1,5 +1,5 @@
 (ns parse-simian.main
-  (:use parse-simian.json-mods)
+  (:use parse-simian.json-mods) ; this class overrides some behavior on clojure.contrib.json
   (:require [clojure.contrib
 	     [command-line :as cl]
 	     [io :as io]
@@ -10,7 +10,7 @@
 
 (defn -main [& args]
   (cl/with-command-line args
-    "parse an xml file and write graph structure to json"
+    "parse an xml file and write graph structure as json"
     [filevec]
     (let [[filename & frest] filevec
 	  [rootname & srest] (str/split  #"\." filename)]

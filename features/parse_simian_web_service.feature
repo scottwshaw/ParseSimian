@@ -25,5 +25,7 @@ Feature: PostSimianWebService
     """
     When I post it to the application
     Then it should produce an OK response
-    And the body should contain JSON starting with "var\s*similarity_graph\s*=\s*\{nodes:\[\{nodeName"
-    And the body should end with "\s*}\s*;\s*"
+    And contain the following patterns:
+    | pattern                                             |
+    | ^var\s*similarity_graph\s*=\s*\{nodes:\[\{nodeName  |
+    | \s*}\s*;\s*$                                        |

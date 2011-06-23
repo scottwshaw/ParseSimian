@@ -13,10 +13,8 @@ Then /^it should produce an OK response$/ do
   @response.code.to_i.should == 200
 end
 
-Then /^the body should contain JSON starting with "([^"]*)"$/ do |arg1|
-  @response.body.should =~ /#{arg1}/
-end
-
-Then /^the body should end with "([^"]*)"$/ do |arg1|
-  pending # express the regexp above with the code you wish you had
+Then /^contain the following patterns:$/ do |table|
+  table.hashes.each do | row | 
+    @response.body.should =~ /#{row["pattern"]}/
+  end
 end

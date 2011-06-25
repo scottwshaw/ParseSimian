@@ -26,6 +26,7 @@ Feature: PostSimianWebService
     When I post it to the application
     Then it should produce an OK response
     And contain the following patterns:
-    | pattern                                             |
-    | ^var\s*similarity_graph\s*=\s*\{nodes:\[\{nodeName  |
-    | \s*}\s*;\s*$                                        |
+    | pattern                                            |
+    | ^var\s*similarity_graph\s*=\s*\{nodes:\[\{nodeName |
+    | group:\"au.com.westpac.pda.beans.report\",size:13} |
+    | \s*}\s*;\s*$                                       |

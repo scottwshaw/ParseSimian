@@ -1,4 +1,5 @@
 (ns parse-simian.core
+  (:use parse-simian.path-to-package)
   (:require (clojure [xml :as xml] [walk :as walk] [zip :as zip])
 	    [clojure.contrib
 	     [combinatorics :as combi]
@@ -8,16 +9,11 @@
 	    [clojure.contrib.zip-filter.xml :as zx])
   (:import (java.io EOFException)))
 
-(defn to-qualified-classname [file-path prefix]
-  (str2/replace (str2/replace (str2/replace file-path prefix "") "/" ".") ".java" ""))
-
-(def path-prefix "/Users/avombatk/projects/healthcheck/build/src/")
-
 (defn zipper-from-xml-input-stream [input-xml-stream]
   (zip/xml-zip (xml/parse input-xml-stream)))
 
 (defn- assoc-class-with-linecount [loc]
-  [(to-qualified-classname (zx/attr loc :sourceFile) path-prefix) (Integer. (zx/attr (zip/up loc) :lineCount))])
+  [(to-qualified-classname (zx/attr loc :sourceFile)) (Integer. (zx/attr (zip/up loc) :lineCount))])
 
 (defn expand-pairs-from-set [seq-of-classes]
   "finds all the distinct pairs that aren't a class and itelf"
@@ -28,7 +24,7 @@
 (defn extract-seq-of-duplication-sets [sim-zip]
   "extracts the files across which duplication occurs"
   (let [class-from-file-attr
-	(fn [loc] (to-qualified-classname (zx/attr loc :sourceFile) path-prefix))]
+	(fn [loc] (to-qualified-classname (zx/attr loc :sourceFile)))]
     (map #(zx/xml-> % :block class-from-file-attr) (zx/xml-> sim-zip :check :set))))
 
 (defn extract-seq-of-block-linecounts [sim-zip]

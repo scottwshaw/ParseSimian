@@ -19,11 +19,6 @@
 	      {:source 1 :target 3 :value 1}
 	      {:source 3 :target 2 :value 1}]})
 
-(deftest shouldConvertPathWithClassfileToQualifiedClassName
-  (fact (to-qualified-classname
-	   "Users/avombatk/projects/healthcheck/build/src/au/com/westpac/pda/beans/cct/CCTTasksBean.java"
-	   "Users/avombatk/projects/healthcheck/build/src/") => "au.com.westpac.pda.beans.cct.CCTTasksBean"))
-
 (deftest should-parse-input-xml-and-produce-a-graph-structure
   (fact (parse-simian-report ...input-stream...) => simple-simian-graph
 	  (provided (zipper-from-xml-input-stream ...input-stream...) => ...input-zip...

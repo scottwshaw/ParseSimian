@@ -2,7 +2,8 @@
   (:require [clojure.string :as str]
 	    [midje.sweet :as ms]))
 
-(ms/unfinished prefix-before-domain)
+(defn prefix-before-domain [path]
+  (first (str/split path #"au/com/")))
 
 (defn to-qualified-classname [path]
   (let [path-prefix (prefix-before-domain path)]
